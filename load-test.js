@@ -2,6 +2,7 @@ const axios = require("axios");
 const ss = require("simple-statistics");
 const yargs = require("yargs/yargs");
 const { hideBin } = require("yargs/helpers");
+const fs = require("fs");
 const stats = [];
 const errStats = [];
 let durationCount = 0;
@@ -10,6 +11,7 @@ const startLoad = (url, method, body, rate, duration) => {
   const recordFunction = (startTime) => (data) => {
     stats.push(Date.now() - startTime);
   };
+  const postBody = fs.readFileSync(body);
   const testStartTime = Date.now();
   const interval = setInterval(function () {
     durationCount++;
@@ -34,10 +36,10 @@ const startLoad = (url, method, body, rate, duration) => {
       axios({
         method: method,
         url: url,
-        data: body,
+        data: postBody,
         headers: {
           "content-type": "application/json",
-        }
+        },
       })
         .then(recordFunction(Date.now()))
         .catch((err) => {
@@ -47,6 +49,7 @@ const startLoad = (url, method, body, rate, duration) => {
   }, 1000);
 };
 const concurrencyModel = (url, method, body, concurrency, duration) => {
+  const postBody = fs.readFileSync(body);
   const stats = [];
   const errStats = [];
   const testStartTime = Date.now();
@@ -71,10 +74,10 @@ const concurrencyModel = (url, method, body, concurrency, duration) => {
     axios({
       method: method,
       url: url,
-      data: body,
+      data: postBody,
       headers: {
         "content-type": "application/json",
-      }
+      },
     })
       .then(recordFunction(Date.now()))
       .catch((err) => {
