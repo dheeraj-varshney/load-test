@@ -3,6 +3,7 @@ const ss = require("simple-statistics");
 const yargs = require("yargs/yargs");
 const { hideBin } = require("yargs/helpers");
 const fs = require("fs");
+const { start } = require("repl");
 const stats = [];
 const errStats = [];
 let durationCount = 0;
@@ -40,6 +41,7 @@ const startLoad = (url, method, body, rate, duration) => {
         headers: {
           "content-type": "application/json",
         },
+        timeout: 300,
       })
         .then(recordFunction(Date.now()))
         .catch((err) => {
@@ -50,15 +52,15 @@ const startLoad = (url, method, body, rate, duration) => {
 };
 const concurrencyModel = (url, method, body, concurrency, duration) => {
   const postBody = fs.readFileSync(body);
-  const stats = [];
-  const errStats = [];
-  const testStartTime = Date.now();
-  let concurrentConnections = concurrency;
-  const recordFunction = (startTime) => (data) => {
-    stats.push(Date.now() - startTime);
-    if ((Date.now() - testStartTime) / 1000 > duration) {
-      concurrentConnections--;
-      console.log(stats.length);
+  const startTime = Date.now();
+  let movingStartTime = startTime;
+  const interval = setInterval(function(){logResults(false)}, 2000)
+  const logResults = (isFinal) => {
+    let timeElapsed = 0;
+    if (isFinal) {
+      timeElapsed = Date.now() - startTime;
+      console.log("Total Successful response", stats.length);
+      console.log("Response per second", stats.length / (timeElapsed / 1000));
       console.log("Response Time", {
         min: ss.min(stats),
         max: ss.max(stats),
@@ -66,6 +68,39 @@ const concurrencyModel = (url, method, body, concurrency, duration) => {
         p95: ss.quantile(stats, 0.95),
         p99: ss.quantile(stats, 0.99),
       });
+      console.log('Errored Responses code', errStats);
+    } else {
+      timeElapsed = Date.now() - movingStartTime;
+      movingStartTime = Date.now();
+      console.log("Total Successful response", movingStats.length);
+      console.log(
+        "Response per second",
+        movingStats.length / (timeElapsed / 1000)
+      );
+      console.log("Response Time", {
+        min: movingStats.length ? ss.min(movingStats): 0,
+        max: movingStats.length ? ss.max(movingStats): 0,
+        median: movingStats.length ? ss.median(movingStats): 0,
+        p95: movingStats.length ? ss.quantile(movingStats, 0.95): 0,
+        p99: movingStats.length ? ss.quantile(movingStats, 0.99): 0,
+      });
+      console.log('Errored Responses code', errStats);
+      movingStats = [];
+    }
+  };
+  let movingStats = [];
+  const stats = [];
+  const errStats = [];
+  const testStartTime = Date.now();
+  let concurrentConnections = concurrency;
+  const recordFunction = (startTime) => (data) => {
+    const timeElapsed = Date.now() - startTime;
+    stats.push(timeElapsed);
+    movingStats.push(timeElapsed);
+    if ((Date.now() - testStartTime) / 1000 > duration) {
+      concurrentConnections--;
+      clearInterval(interval)
+      logResults(true)
       return;
     }
     createHttp();
@@ -78,11 +113,12 @@ const concurrencyModel = (url, method, body, concurrency, duration) => {
       headers: {
         "content-type": "application/json",
       },
+      timeout: 350,
     })
       .then(recordFunction(Date.now()))
       .catch((err) => {
-        errStats.push(err);
-        concurrentConnections--;
+        errStats.push(err.code);
+        createHttp()
       });
   };
   for (let i = 0; i < concurrency; i++) {
