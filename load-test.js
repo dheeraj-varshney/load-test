@@ -1,11 +1,11 @@
 const axios = require("axios");
 const ss = require("simple-statistics");
-const yargs = require('yargs/yargs')
-const { hideBin } = require('yargs/helpers')
+const yargs = require("yargs/yargs");
+const { hideBin } = require("yargs/helpers");
 const stats = [];
 const errStats = [];
 let durationCount = 0;
-const argv =  yargs(hideBin(process.argv)).argv
+const argv = yargs(hideBin(process.argv)).argv;
 const startLoad = (url, method, body, rate, duration) => {
   const recordFunction = (startTime) => (data) => {
     stats.push(Date.now() - startTime);
@@ -35,6 +35,9 @@ const startLoad = (url, method, body, rate, duration) => {
         method: method,
         url: url,
         data: body,
+        headers: {
+          "content-type": "application/json",
+        }
       })
         .then(recordFunction(Date.now()))
         .catch((err) => {
@@ -69,6 +72,9 @@ const concurrencyModel = (url, method, body, concurrency, duration) => {
       method: method,
       url: url,
       data: body,
+      headers: {
+        "content-type": "application/json",
+      }
     })
       .then(recordFunction(Date.now()))
       .catch((err) => {
@@ -81,21 +87,32 @@ const concurrencyModel = (url, method, body, concurrency, duration) => {
   }
 };
 
-if(argv.concurrencyModel) {
-    if(argv.url && argv.method && argv.body && argv.concurrency && argv.duration) {
-        concurrencyModel(argv.url, argv.method, argv.body, argv.concurrency, argv.duration)
-    }
-    else {
-        console.error("pass proper args")
-    }
+if (argv.concurrencyModel) {
+  if (
+    argv.url &&
+    argv.method &&
+    argv.body &&
+    argv.concurrency &&
+    argv.duration
+  ) {
+    concurrencyModel(
+      argv.url,
+      argv.method,
+      argv.body,
+      argv.concurrency,
+      argv.duration
+    );
+  } else {
+    console.error("pass proper args");
+  }
 }
-if(argv.rateModel) {
-    if(argv.url && argv.method && argv.body && argv.rate && argv.duration) {
-        startLoad(argv.url, argv.method, argv.body, argv.rate, argv.duration)
-    }
-    else {
-        console.error("pass proper args")
-    }
+if (argv.rateModel) {
+  if (argv.url && argv.method && argv.body && argv.rate && argv.duration) {
+    startLoad(argv.url, argv.method, argv.body, argv.rate, argv.duration);
+  } else {
+    console.log({ argv });
+    console.error("pass proper args");
+  }
 }
 //startLoad("http://localhost:7000/sections", "get", {}, 10, 5);
 //concurrencyModel("http://localhost:7000/sections", "get", {}, 10, 5);
