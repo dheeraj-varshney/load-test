@@ -11,12 +11,28 @@ const argv = yargs(hideBin(process.argv)).argv;
 const EVLD = blocked(function (delay) {
   console.log(`Event loop delay ${delay}`);
 }, {threshold:1, interval: 1000});
-const startLoad = (url, method, body, rate, duration) => {
+
+const startLoad = (url, method, body, rate, duration, rampDuration) => {
+  let currentRate = 10;
+  const speed =  Math.ceil((rate - currentRate)/rampDuration);
   const recordFunction = (startTime) => (data) => {
     stats.push(Date.now() - startTime);
   };
   const postBody = fs.readFileSync(body);
   const testStartTime = Date.now();
+  const createRequest = () => axios({
+    method: method,
+    url: url,
+    data: postBody,
+    headers: {
+      "content-type": "application/json",
+    },
+  })
+    .then(recordFunction(Date.now()))
+    .catch((err) => {
+      errStats.push(err);
+    });
+  let count =1;
   const interval = setInterval(function () {
     durationCount++;
     if (durationCount > duration) {
@@ -34,22 +50,15 @@ const startLoad = (url, method, body, rate, duration) => {
       });
       console.log("Total Successful Requests", stats.length);
       console.log("Errored Response", errStats.length);
+      console.log("Errored Response", errStats[0]);
+      console.log(count);
       return;
     }
-    for (let i = 0; i < rate; i++) {
-      axios({
-        method: method,
-        url: url,
-        data: postBody,
-        headers: {
-          "content-type": "application/json",
-        },
-      })
-        .then(recordFunction(Date.now()))
-        .catch((err) => {
-          errStats.push(err);
-        });
+    for (let i = 0; i < currentRate; i++) {
+      count++;
+      createRequest();
     }
+    currentRate +=(speed);
   }, 1000);
 };
 const concurrencyModel = (url, method, body, concurrency, duration) => {
@@ -149,8 +158,12 @@ if (argv.concurrencyModel) {
   }
 }
 if (argv.rateModel) {
-  if (argv.url && argv.method && argv.body && argv.rate && argv.duration) {
-    startLoad(argv.url, argv.method, argv.body, argv.rate, argv.duration);
+  if (argv.url && argv.method && argv.body && argv.rate && argv.duration && argv.rampDuration) {
+    if(argv.rate < 10 && argv.duration < argv.rampDuration) {
+      console.error("pass proper args");
+    }  else  {
+      startLoad(argv.url, argv.method, argv.body, argv.rate, argv.duration, argv.rampDuration);  
+    }
   } else {
     console.log({ argv });
     console.error("pass proper args");
