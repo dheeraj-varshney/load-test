@@ -8,34 +8,41 @@ const stats = [];
 const errStats = [];
 let durationCount = 0;
 const argv = yargs(hideBin(process.argv)).argv;
-const EVLD = blocked(function (delay) {
-  console.log(`Event loop delay ${delay}`);
-}, {threshold:1, interval: 1000});
+const EVLD = blocked(
+  function (delay) {
+    console.log(`Event loop delay ${delay}`);
+  },
+  { threshold: 1, interval: 1000 }
+);
 
 const startLoad = (url, method, body, rate, duration, rampDuration) => {
   let currentRate = 10;
-  const speed =  Math.ceil((rate - currentRate)/rampDuration);
+  const speed = Math.ceil((rate - currentRate) / rampDuration);
+  let count = 0;
   const recordFunction = (startTime) => (data) => {
     stats.push(Date.now() - startTime);
+    count--;
   };
   const postBody = fs.readFileSync(body);
   const testStartTime = Date.now();
-  const createRequest = () => axios({
-    method: method,
-    url: url,
-    data: postBody,
-    headers: {
-      "content-type": "application/json",
-    },
-  })
-    .then(recordFunction(Date.now()))
-    .catch((err) => {
-      errStats.push(err);
-    });
-  let count =1;
+  const createRequest = () =>
+    axios({
+      method: method,
+      url: url,
+      data: postBody,
+      headers: {
+        "content-type": "application/json",
+      },
+    })
+      .then(recordFunction(Date.now()))
+      .catch((err) => {
+        errStats.push(err);
+        count--;
+      });
   const interval = setInterval(function () {
     durationCount++;
-    if (durationCount > duration) {
+    console.log("Active Connections", count);
+    if (durationCount > duration && count <= 0) {
       clearInterval(interval);
       console.log(
         "Mean response/sec",
@@ -48,17 +55,24 @@ const startLoad = (url, method, body, rate, duration, rampDuration) => {
         p95: ss.quantile(stats, 0.95),
         p99: ss.quantile(stats, 0.99),
       });
-      console.log("Total Successful Requests", stats.length);
-      console.log("Errored Response", errStats.length);
+      console.log("Total Successful response", stats.length);
+      console.log("Errored Response count", errStats.length);
       console.log("Errored Response", errStats[0]);
-      console.log(count);
+      console.log("Active connections", count);
       return;
     }
-    for (let i = 0; i < currentRate; i++) {
-      count++;
-      createRequest();
+    if (durationCount <= duration) {
+      for (let i = 0; i < currentRate; i++) {
+        count++;
+        createRequest();
+      }
+    } else {
+      console.log("total response", stats.length);
+      console.log("total errors", errStats.length);
     }
-    currentRate +=(speed);
+    if (currentRate < rate) {
+      currentRate += speed;
+    }
   }, 1000);
 };
 const concurrencyModel = (url, method, body, concurrency, duration) => {
@@ -158,11 +172,25 @@ if (argv.concurrencyModel) {
   }
 }
 if (argv.rateModel) {
-  if (argv.url && argv.method && argv.body && argv.rate && argv.duration && argv.rampDuration) {
-    if(argv.rate < 10 && argv.duration < argv.rampDuration) {
+  if (
+    argv.url &&
+    argv.method &&
+    argv.body &&
+    argv.rate &&
+    argv.duration &&
+    argv.rampDuration
+  ) {
+    if (argv.rate < 10 && argv.duration < argv.rampDuration) {
       console.error("pass proper args");
-    }  else  {
-      startLoad(argv.url, argv.method, argv.body, argv.rate, argv.duration, argv.rampDuration);  
+    } else {
+      startLoad(
+        argv.url,
+        argv.method,
+        argv.body,
+        argv.rate,
+        argv.duration,
+        argv.rampDuration
+      );
     }
   } else {
     console.log({ argv });
