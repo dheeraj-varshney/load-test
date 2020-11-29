@@ -3,11 +3,14 @@ const ss = require("simple-statistics");
 const yargs = require("yargs/yargs");
 const { hideBin } = require("yargs/helpers");
 const fs = require("fs");
-const { start } = require("repl");
+const blocked = require("blocked");
 const stats = [];
 const errStats = [];
 let durationCount = 0;
 const argv = yargs(hideBin(process.argv)).argv;
+const EVLD = blocked(function (delay) {
+  console.log(`Event loop delay ${delay}`);
+}, {threshold:1, interval: 1000});
 const startLoad = (url, method, body, rate, duration) => {
   const recordFunction = (startTime) => (data) => {
     stats.push(Date.now() - startTime);
@@ -41,7 +44,6 @@ const startLoad = (url, method, body, rate, duration) => {
         headers: {
           "content-type": "application/json",
         },
-        timeout: 300,
       })
         .then(recordFunction(Date.now()))
         .catch((err) => {
@@ -54,7 +56,9 @@ const concurrencyModel = (url, method, body, concurrency, duration) => {
   const postBody = fs.readFileSync(body);
   const startTime = Date.now();
   let movingStartTime = startTime;
-  const interval = setInterval(function(){logResults(false)}, 2000)
+  const interval = setInterval(function () {
+    logResults(false);
+  }, 2000);
   const logResults = (isFinal) => {
     let timeElapsed = 0;
     if (isFinal) {
@@ -68,7 +72,7 @@ const concurrencyModel = (url, method, body, concurrency, duration) => {
         p95: ss.quantile(stats, 0.95),
         p99: ss.quantile(stats, 0.99),
       });
-      console.log('Errored Responses code', errStats);
+      console.log("Errored Responses code", errStats);
     } else {
       timeElapsed = Date.now() - movingStartTime;
       movingStartTime = Date.now();
@@ -78,13 +82,13 @@ const concurrencyModel = (url, method, body, concurrency, duration) => {
         movingStats.length / (timeElapsed / 1000)
       );
       console.log("Response Time", {
-        min: movingStats.length ? ss.min(movingStats): 0,
-        max: movingStats.length ? ss.max(movingStats): 0,
-        median: movingStats.length ? ss.median(movingStats): 0,
-        p95: movingStats.length ? ss.quantile(movingStats, 0.95): 0,
-        p99: movingStats.length ? ss.quantile(movingStats, 0.99): 0,
+        min: movingStats.length ? ss.min(movingStats) : 0,
+        max: movingStats.length ? ss.max(movingStats) : 0,
+        median: movingStats.length ? ss.median(movingStats) : 0,
+        p95: movingStats.length ? ss.quantile(movingStats, 0.95) : 0,
+        p99: movingStats.length ? ss.quantile(movingStats, 0.99) : 0,
       });
-      console.log('Errored Responses code', errStats);
+      console.log("Errored Responses code", errStats);
       movingStats = [];
     }
   };
@@ -99,8 +103,8 @@ const concurrencyModel = (url, method, body, concurrency, duration) => {
     movingStats.push(timeElapsed);
     if ((Date.now() - testStartTime) / 1000 > duration) {
       concurrentConnections--;
-      clearInterval(interval)
-      logResults(true)
+      clearInterval(interval);
+      logResults(true);
       return;
     }
     createHttp();
@@ -113,12 +117,11 @@ const concurrencyModel = (url, method, body, concurrency, duration) => {
       headers: {
         "content-type": "application/json",
       },
-      timeout: 350,
     })
       .then(recordFunction(Date.now()))
       .catch((err) => {
         errStats.push(err.code);
-        createHttp()
+        createHttp();
       });
   };
   for (let i = 0; i < concurrency; i++) {
