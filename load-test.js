@@ -33,6 +33,7 @@ const startLoad = (url, method, body, rate, duration, rampDuration) => {
       headers: {
         "content-type": "application/json",
       },
+      timeout: 500
     })
       .then(recordFunction(Date.now()))
       .catch((err) => {
