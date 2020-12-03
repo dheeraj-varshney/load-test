@@ -6,7 +6,10 @@ const fs = require("fs");
 const blocked = require("blocked");
 const stats = [];
 const errStats = [];
+let movingResponseCount = 0;
+const responsesEachSeconds = [];
 let durationCount = 0;
+let isRateConstant = false;
 const argv = yargs(hideBin(process.argv)).argv;
 const EVLD = blocked(
   function (delay) {
@@ -20,8 +23,11 @@ const startLoad = (url, method, body, rate, duration, rampDuration) => {
   const speed = Math.ceil((rate - currentRate) / rampDuration);
   let count = 0;
   const recordFunction = (startTime) => (data) => {
-    stats.push(Date.now() - startTime);
     count--;
+    if (isRateConstant) {
+      stats.push(Date.now() - startTime);
+      movingResponseCount++;
+    }
   };
   const postBody = fs.readFileSync(body);
   const testStartTime = Date.now();
@@ -33,7 +39,6 @@ const startLoad = (url, method, body, rate, duration, rampDuration) => {
       headers: {
         "content-type": "application/json",
       },
-      timeout: 500
     })
       .then(recordFunction(Date.now()))
       .catch((err) => {
@@ -43,18 +48,33 @@ const startLoad = (url, method, body, rate, duration, rampDuration) => {
   const interval = setInterval(function () {
     durationCount++;
     console.log("Active Connections", count);
+    if (isRateConstant) {
+      console.log("Number of Responses this second", movingResponseCount);
+      responsesEachSeconds.push(movingResponseCount);
+      movingResponseCount = 0;
+    } else {
+      console.log("stats", stats);
+    }
     if (durationCount > duration && count <= 0) {
       clearInterval(interval);
       console.log(
         "Mean response/sec",
         stats.length / ((Date.now() - testStartTime) / 1000)
       );
-      console.log("Response Time", {
+      console.log("Response latency", {
         min: ss.min(stats),
         max: ss.max(stats),
         median: ss.median(stats),
         p95: ss.quantile(stats, 0.95),
         p99: ss.quantile(stats, 0.99),
+      });
+      console.log("Responses per second", {
+        min: ss.min(responsesEachSeconds),
+        max: ss.max(responsesEachSeconds),
+        median: ss.median(responsesEachSeconds),
+        p95: ss.quantile(responsesEachSeconds, 0.95),
+        p99: ss.quantile(responsesEachSeconds, 0.99),
+        variance: ss.variance(responsesEachSeconds),
       });
       console.log("Total Successful response", stats.length);
       console.log("Errored Response count", errStats.length);
@@ -70,9 +90,20 @@ const startLoad = (url, method, body, rate, duration, rampDuration) => {
     } else {
       console.log("total response", stats.length);
       console.log("total errors", errStats.length);
+      console.log("Responses per second (still waiting for pending requests......)", {
+        min: ss.min(responsesEachSeconds),
+        max: ss.max(responsesEachSeconds),
+        median: ss.median(responsesEachSeconds),
+        p95: ss.quantile(responsesEachSeconds, 0.95),
+        p99: ss.quantile(responsesEachSeconds, 0.99),
+        variance: ss.variance(responsesEachSeconds),
+      });
     }
+    // Ramp up
     if (currentRate < rate) {
       currentRate += speed;
+    } else {
+      isRateConstant = true;
     }
   }, 1000);
 };
