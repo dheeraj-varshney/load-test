@@ -18,6 +18,14 @@ const EVLD = blocked(
   { threshold: 1, interval: 1000 }
 );
 
+const httpAgent = new http.Agent({ keepAlive: true });
+const httpsAgent = new https.Agent({ keepAlive: true });
+
+const instance = axios.create({
+  httpAgent,  // httpAgent: httpAgent -> for non es6 syntax
+  httpsAgent,
+});
+
 const startLoad = (url, method, body, rate, duration, rampDuration) => {
   let currentRate = 10;
   const speed = Math.ceil((rate - currentRate) / rampDuration);
@@ -39,6 +47,7 @@ const startLoad = (url, method, body, rate, duration, rampDuration) => {
       headers: {
         "content-type": "application/json",
       },
+      httpAgent
     })
       .then(recordFunction(Date.now()))
       .catch((err) => {
