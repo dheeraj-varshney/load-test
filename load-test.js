@@ -45,18 +45,19 @@ const startLoad = (url, method, body, rate, duration, rampDuration) => {
         errStats.push(err);
         count--;
       });
+  const smallInterval = setInterval(function () {
+    if (isRateConstant) {
+      console.log("Number of Responses in last 100 ms", movingResponseCount);
+      responsesEachSeconds.push(movingResponseCount);
+      movingResponseCount = 0;
+    }
+  }, 500);
   const interval = setInterval(function () {
     durationCount++;
     console.log("Active Connections", count);
-    if (isRateConstant) {
-      console.log("Number of Responses this second", movingResponseCount);
-      responsesEachSeconds.push(movingResponseCount);
-      movingResponseCount = 0;
-    } else {
-      console.log("stats", stats);
-    }
     if (durationCount > duration && count <= 0) {
       clearInterval(interval);
+      clearInterval(smallInterval);
       console.log(
         "Mean response/sec",
         stats.length / ((Date.now() - testStartTime) / 1000)
@@ -90,14 +91,17 @@ const startLoad = (url, method, body, rate, duration, rampDuration) => {
     } else {
       console.log("total response", stats.length);
       console.log("total errors", errStats.length);
-      console.log("Responses per second (still waiting for pending requests......)", {
-        min: ss.min(responsesEachSeconds),
-        max: ss.max(responsesEachSeconds),
-        median: ss.median(responsesEachSeconds),
-        p95: ss.quantile(responsesEachSeconds, 0.95),
-        p99: ss.quantile(responsesEachSeconds, 0.99),
-        variance: ss.variance(responsesEachSeconds),
-      });
+      console.log(
+        "Responses per second (still waiting for pending requests......)",
+        {
+          min: ss.min(responsesEachSeconds),
+          max: ss.max(responsesEachSeconds),
+          median: ss.median(responsesEachSeconds),
+          p95: ss.quantile(responsesEachSeconds, 0.95),
+          p99: ss.quantile(responsesEachSeconds, 0.99),
+          variance: ss.variance(responsesEachSeconds),
+        }
+      );
     }
     // Ramp up
     if (currentRate < rate) {
