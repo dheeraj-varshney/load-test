@@ -43,7 +43,7 @@ const startLoad = (url, method, body, rate, duration, logInterval) => {
       });
 
   const dataLogger = setInterval(function () {
-    console.dir(response && response.data ? response.data : "error", {
+    console.dir(response, {
       depth: null,
     });
     console.log("Errored Response count", errStats.length);
