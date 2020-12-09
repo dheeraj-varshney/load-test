@@ -18,16 +18,26 @@ const EVLD = blocked(
   { threshold: 1, interval: 1000 }
 );
 
-const startLoad = (url, method, body, rate, duration, rampDuration) => {
+const startLoad = (
+  url,
+  method,
+  body,
+  rate,
+  duration,
+  rampDuration,
+  logInterval
+) => {
   let currentRate = 10;
   const speed = Math.ceil((rate - currentRate) / rampDuration);
   let count = 0;
+  let response = {};
   const recordFunction = (startTime) => (data) => {
     count--;
     if (isRateConstant) {
       stats.push(Date.now() - startTime);
       movingResponseCount++;
     }
+    response = data;
   };
   const postBody = fs.readFileSync(body);
   const testStartTime = Date.now();
@@ -52,6 +62,11 @@ const startLoad = (url, method, body, rate, duration, rampDuration) => {
       movingResponseCount = 0;
     }
   }, 500);
+  const dataLogger = setInterval(function () {
+    console.log("data", response.data.data);
+    console.log("Errored Response count", errStats.length);
+    console.log("Errored Response", errStats[0]);
+  }, logInterval);
   const interval = setInterval(function () {
     durationCount++;
     console.log("Active Connections", count);
@@ -219,13 +234,15 @@ if (argv.rateModel) {
     if (argv.rate < 10 && argv.duration < argv.rampDuration) {
       console.error("pass proper args");
     } else {
+      const logDuration = argv.logInterval ? argv.logInterval : 1000;
       startLoad(
         argv.url,
         argv.method,
         argv.body,
         argv.rate,
         argv.duration,
-        argv.rampDuration
+        argv.rampDuration,
+        logDuration
       );
     }
   } else {
