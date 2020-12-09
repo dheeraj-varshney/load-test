@@ -4,12 +4,9 @@ const yargs = require("yargs/yargs");
 const { hideBin } = require("yargs/helpers");
 const fs = require("fs");
 const blocked = require("blocked");
-const stats = [];
-const errStats = [];
-let movingResponseCount = 0;
-const responsesEachSeconds = [];
+let stats = [];
+let errStats = [];
 let durationCount = 0;
-let isRateConstant = false;
 const argv = yargs(hideBin(process.argv)).argv;
 const EVLD = blocked(
   function (delay) {
@@ -18,25 +15,14 @@ const EVLD = blocked(
   { threshold: 1, interval: 1000 }
 );
 
-const startLoad = (
-  url,
-  method,
-  body,
-  rate,
-  duration,
-  rampDuration,
-  logInterval
-) => {
-  let currentRate = 10;
-  const speed = Math.ceil((rate - currentRate) / rampDuration);
+const startLoad = (url, method, body, rate, duration, logInterval) => {
   let count = 0;
   let response = {};
+  const rates = rate.split(",");
+  let testIndex = 0;
   const recordFunction = (startTime) => (data) => {
     count--;
-    if (isRateConstant) {
-      stats.push(Date.now() - startTime);
-      movingResponseCount++;
-    }
+    stats.push(Date.now() - startTime);
     response = data;
   };
   const postBody = fs.readFileSync(body);
@@ -55,24 +41,26 @@ const startLoad = (
         errStats.push(err);
         count--;
       });
-  const smallInterval = setInterval(function () {
-    if (isRateConstant) {
-      console.log("Number of Responses in last 100 ms", movingResponseCount);
-      responsesEachSeconds.push(movingResponseCount);
-      movingResponseCount = 0;
-    }
-  }, 500);
+
   const dataLogger = setInterval(function () {
-    console.log("data", response && response.data ? response.data.data : 'error');
+    console.log(
+      "data",
+      response && response.data ? response.data : "error"
+    );
     console.log("Errored Response count", errStats.length);
     console.log("Errored Response", errStats[0]);
-  }, logInterval);
+  }, 5000);
   const interval = setInterval(function () {
     durationCount++;
     console.log("Active Connections", count);
     if (durationCount > duration && count <= 0) {
-      clearInterval(interval);
-      clearInterval(smallInterval);
+      if (testIndex >= rates.length -1 ) {
+        clearInterval(interval);
+        clearInterval(dataLogger);
+      }
+      testIndex++;
+      durationCount = 0;
+      console.log(`test no. ${testIndex} is complete`);
       console.log(
         "Mean response/sec",
         stats.length / ((Date.now() - testStartTime) / 1000)
@@ -84,48 +72,26 @@ const startLoad = (
         p95: ss.quantile(stats, 0.95),
         p99: ss.quantile(stats, 0.99),
       });
-      console.log("Responses per second", {
-        min: ss.min(responsesEachSeconds),
-        max: ss.max(responsesEachSeconds),
-        median: ss.median(responsesEachSeconds),
-        p95: ss.quantile(responsesEachSeconds, 0.95),
-        p99: ss.quantile(responsesEachSeconds, 0.99),
-        variance: ss.variance(responsesEachSeconds),
-      });
       console.log("Total Successful response", stats.length);
       console.log("Errored Response count", errStats.length);
       console.log("Errored Response", errStats[0]);
       console.log("Active connections", count);
+      stats = [];
+      errStats = [];
       return;
     }
     if (durationCount <= duration) {
-      for (let i = 0; i < currentRate; i++) {
+      for (let i = 0; i < Number(rates[testIndex]); i++) {
         count++;
         createRequest();
       }
     } else {
       console.log("total response", stats.length);
       console.log("total errors", errStats.length);
-      console.log(
-        "Responses per second (still waiting for pending requests......)",
-        {
-          min: ss.min(responsesEachSeconds),
-          max: ss.max(responsesEachSeconds),
-          median: ss.median(responsesEachSeconds),
-          p95: ss.quantile(responsesEachSeconds, 0.95),
-          p99: ss.quantile(responsesEachSeconds, 0.99),
-          variance: ss.variance(responsesEachSeconds),
-        }
-      );
-    }
-    // Ramp up
-    if (currentRate < rate) {
-      currentRate += speed;
-    } else {
-      isRateConstant = true;
     }
   }, 1000);
 };
+
 const concurrencyModel = (url, method, body, concurrency, duration) => {
   const postBody = fs.readFileSync(body);
   const startTime = Date.now();
