@@ -63,7 +63,7 @@ const startLoad = (
     }
   }, 500);
   const dataLogger = setInterval(function () {
-    console.log("data", response.data.data);
+    console.log("data", response && response.data ? response.data.data : 'error');
     console.log("Errored Response count", errStats.length);
     console.log("Errored Response", errStats[0]);
   }, logInterval);
