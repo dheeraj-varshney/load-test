@@ -44,9 +44,16 @@ const startLoad = (url, method, body, rate, duration, logInterval) => {
 
   const dataLogger = setInterval(function () {
     console.dir(obj, { depth: null });
-    console.dir(response && response.data ? response.data : response.headers, {
-      depth: null,
-    });
+    console.dir(
+      response && response.data
+        ? response.data
+        : response
+        ? response.headers
+        : "response undefined",
+      {
+        depth: null,
+      }
+    );
     console.log("Errored Response count", errStats.length);
     console.log("Errored Response", errStats[0]);
   }, 5000);
