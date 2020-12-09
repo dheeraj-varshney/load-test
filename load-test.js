@@ -73,6 +73,7 @@ const startLoad = (
     if (durationCount > duration && count <= 0) {
       clearInterval(interval);
       clearInterval(smallInterval);
+      clearInterval(dataLogger);
       console.log(
         "Mean response/sec",
         stats.length / ((Date.now() - testStartTime) / 1000)
