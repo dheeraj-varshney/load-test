@@ -43,10 +43,9 @@ const startLoad = (url, method, body, rate, duration, logInterval) => {
       });
 
   const dataLogger = setInterval(function () {
-    console.log(
-      "data",
-      response && response.data ? response.data : "error"
-    );
+    console.dir(response && response.data ? response.data : "error", {
+      depth: null,
+    });
     console.log("Errored Response count", errStats.length);
     console.log("Errored Response", errStats[0]);
   }, 5000);
@@ -54,7 +53,7 @@ const startLoad = (url, method, body, rate, duration, logInterval) => {
     durationCount++;
     console.log("Active Connections", count);
     if (durationCount > duration && count <= 0) {
-      if (testIndex >= rates.length -1 ) {
+      if (testIndex >= rates.length - 1) {
         clearInterval(interval);
         clearInterval(dataLogger);
       }
