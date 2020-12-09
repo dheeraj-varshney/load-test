@@ -43,7 +43,6 @@ const startLoad = (url, method, body, rate, duration, logInterval) => {
       });
 
   const dataLogger = setInterval(function () {
-    console.dir(obj, { depth: null });
     console.dir(
       response && response.data
         ? response.data
