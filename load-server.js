@@ -35,7 +35,7 @@ function startRequest(maxRequest, rate, url) {
                     .then(() => totalResponse++)
                     .catch((err) => {
                         totalError++
-                      console.log(err)
+                        console.log(err)
                     });
             }
         }
