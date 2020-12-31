@@ -2,7 +2,6 @@ const axios = require("axios");
 const ss = require("simple-statistics");
 const yargs = require("yargs/yargs");
 const { hideBin } = require("yargs/helpers");
-const fs = require("fs");
 const blocked = require("blocked");
 const loadConfig = require('./load-config');
 const payload = require('./payload')
