@@ -3,6 +3,29 @@ const yargs = require("yargs/yargs");
 const { hideBin } = require("yargs/helpers");
 const argv = yargs(hideBin(process.argv)).argv;
 
+const createRequest = () => {
+    return axios({
+        method: "post",
+        url: `http://internal-node-api-mock-532674101.us-east-1.elb.amazonaws.com/${url}`,
+        data: {
+            "siteId": 1,
+            "wlsId": 1,
+            "roundId": 23905,
+            "tourId": 1616,
+            "site": "cricket",
+            "contestDB": "voltdb4",
+            "roundCalcStatus": 0,
+            "pcStreamingStatus": 0,
+            "pcStack": "classic",
+            "isRoundComplete": 0,
+            "isRoundLocked": 0,
+            "isArchive": 0
+        },
+        headers: {
+          "content-type": "application/json",
+        },
+      })
+}
 function startRequest(maxRequest, rate, url) {
     let totalRequest = 0;
     let totalResponse =0;
