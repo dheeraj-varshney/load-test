@@ -36,7 +36,7 @@ const startLoad = (url, method, maxRate, duration) => {
 
   const testStartTime = Date.now();
 
-  const recordResponse = (startTime, data) => {
+  const recordResponse = (startTime) => (data) => {
     pendingRequest--;
     stats.push(Date.now() - startTime);
     let response = data;
@@ -97,7 +97,7 @@ const startLoad = (url, method, maxRate, duration) => {
             pendingRequest++;
             let postBody = payload[query];
             createRequest(url, method, postBody)
-              .then((response) => recordResponse(Date.now(), response))
+              .then(recordResponse(Date.now()))
               .catch((err) => {
                 errStats.push(err);
                 console.log(err);
