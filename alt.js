@@ -3,8 +3,8 @@ const ss = require("simple-statistics");
 const yargs = require("yargs/yargs");
 const { hideBin } = require("yargs/helpers");
 const blocked = require("blocked");
-const loadConfig = require('./load-config');
-const payload = require('./payload')
+const loadConfig = require("./load-config");
+const payload = require("./payload");
 let stats = [];
 let errStats = [];
 let durationCount = 0;
@@ -18,20 +18,20 @@ const EVLD = blocked(
 );
 
 const createRequest = async (url, method, postBody) =>
-    axios({
-      method: method,
-      url: url,
-      data: postBody,
-      headers: {
-        "content-type": "application/json",
-      },
-    })
+  axios({
+    method: method,
+    url: url,
+    data: postBody,
+    headers: {
+      "content-type": "application/json",
+    },
+  });
 
 const startLoad = (url, method, maxRate, duration) => {
   let pendingRequest = 0;
   let rate = 0;
-  const allQueries= Object.keys(loadConfig)
-  allQueries.forEach((query) => rate += loadConfig[query])
+  const allQueries = Object.keys(loadConfig);
+  allQueries.forEach((query) => (rate += loadConfig[query]));
   let minRate = rate;
 
   const testStartTime = Date.now();
@@ -40,15 +40,15 @@ const startLoad = (url, method, maxRate, duration) => {
     pendingRequest--;
     stats.push(Date.now() - startTime);
     let response = data;
-    const validResponse = response && response.data
-    if(!validResponse) {
-      console.log("Invalid Response", response.status)
-      errStats.push(response)
+    const validResponse = response && response.data;
+    if (!validResponse) {
+      console.log("Invalid Response", response.status);
+      errStats.push(response);
     }
   };
-  
+
   const printOutput = (rate) => {
-    console.log("***********************************")
+    console.log("***********************************");
     console.log(`rate ${rate} is complete`);
     console.log(
       "Mean response/sec",
@@ -63,21 +63,21 @@ const startLoad = (url, method, maxRate, duration) => {
     });
     console.log("Total Successful response", stats.length);
     console.log("Errored Response count", errStats.length);
-    console.log("***********************************")
-  }
+    console.log("***********************************");
+  };
 
   const increaseLoad = (durationCount, duration, pendingRequest) => {
     if (durationCount > duration && pendingRequest <= 0) {
-        printOutput(rate)
-        return true;
+      printOutput(rate);
+      return true;
     }
-    return false
-  }
+    return false;
+  };
 
   const interval = setInterval(async () => {
     durationCount++;
-    if(increaseLoad(durationCount, duration, pendingRequest)) {
-      rate = rate + minRate
+    if (increaseLoad(durationCount, duration, pendingRequest)) {
+      rate = rate + minRate;
       durationCount = 0;
       stats = [];
       errStats = [];
@@ -86,44 +86,36 @@ const startLoad = (url, method, maxRate, duration) => {
       }
     } else {
       if (durationCount <= duration) {
-        for(let i=0;i<allQueries.length;i++) {
-          const query = allQueries[i]
-          for (let j = 0; j < loadConfig[query] * (rate/minRate); j++) {
+        for (let i = 0; i < allQueries.length; i++) {
+          const query = allQueries[i];
+          console.log(
+            `Hitting ${query} ${
+              loadConfig[query] * (rate / minRate)
+            } number of times`
+          );
+          for (let j = 0; j < loadConfig[query] * (rate / minRate); j++) {
             pendingRequest++;
-            try {
-                let postBody = payload[query]
-                const response = await createRequest(url, method, postBody);
-                recordResponse(Date.now(), response)
-            } catch(err) {  
+            let postBody = payload[query];
+            createRequest(url, method, postBody)
+              .then((response) => recordResponse(Date.now(), response))
+              .catch((err) => {
                 errStats.push(err);
+                console.log(err);
                 pendingRequest--;
-            }
+              });
           }
         }
       }
-      console.log(errStats.length)
-      console.log(`Rate ${rate} Waiting for response`)
-      console.log(`Pending request ${pendingRequest}`)
-      console.log("***********************")
+      console.log(errStats.length);
+      console.log(`Rate ${rate} Waiting for response`);
+      console.log(`Pending request ${pendingRequest}`);
+      console.log("***********************");
     }
   }, 1000);
 };
 
-
-if (
-  argv.url &&
-  argv.method &&
-  argv.body &&
-  argv.maxRate &&
-  argv.duration 
-) {
-    startLoad(
-      argv.url,
-      argv.method,
-      argv.body,
-      argv.maxRate,
-      argv.duration,
-    );
+if (argv.url && argv.method && argv.maxRate && argv.duration) {
+  startLoad(argv.url, argv.method, argv.maxRate, argv.duration);
 } else {
   console.log({ argv });
   console.error("pass proper args");
