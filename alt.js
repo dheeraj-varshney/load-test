@@ -34,7 +34,7 @@ const startLoad = (url, method, maxRate, duration) => {
   allQueries.forEach((query) => (rate += loadConfig[query]));
   let minRate = rate;
 
-  const testStartTime = Date.now();
+  let testStartTime = Date.now();
 
   const recordResponse = (startTime) => (data) => {
     pendingRequest--;
@@ -82,6 +82,7 @@ const startLoad = (url, method, maxRate, duration) => {
       durationCount = 0;
       stats = [];
       errStats = [];
+      testStartTime = Date.now()
       if (rate > maxRate) {
         clearInterval(interval);
       }
