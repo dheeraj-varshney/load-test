@@ -94,6 +94,7 @@ const startLoad = (url, method, maxRate, duration) => {
               loadConfig[query] * (rate / minRate)
             } number of times`
           );
+          
           for (let j = 0; j < loadConfig[query] * (rate / minRate); j++) {
             pendingRequest++;
             let postBody = payload[query];
@@ -105,11 +106,13 @@ const startLoad = (url, method, maxRate, duration) => {
                 pendingRequest--;
               });
           }
+          console.log('Request finished. Now moving to next query')
+          console.log("***********************");
         }
       } else {
-        console.log('Error count', errStats.length);
         console.log(`Rate ${rate} Waiting for response`);
         console.log(`Pending request ${pendingRequest}`);
+        console.log('Error count', errStats.length);
         console.log("***********************");
       }
     }
