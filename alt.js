@@ -49,6 +49,7 @@ const startLoad = (url, method, maxRate, duration) => {
 
   const printOutput = (rate) => {
     console.log("***********************************");
+    console.log("Stats", stats)
     console.log(`rate ${rate} is complete`);
     console.log(
       "Mean response/sec",
@@ -105,11 +106,12 @@ const startLoad = (url, method, maxRate, duration) => {
               });
           }
         }
+      } else {
+        console.log('Error count', errStats.length);
+        console.log(`Rate ${rate} Waiting for response`);
+        console.log(`Pending request ${pendingRequest}`);
+        console.log("***********************");
       }
-      console.log(errStats.length);
-      console.log(`Rate ${rate} Waiting for response`);
-      console.log(`Pending request ${pendingRequest}`);
-      console.log("***********************");
     }
   }, 1000);
 };
