@@ -48,8 +48,7 @@ const payload = {
       "site": "cricket",
       "matchId": 23971,
       "isLoggedIn": true,
-      "isFirstPage": true,
-      "shouldFetchTdsBreakup": true
+      "isFirstPage": true
     },
     operationName: "ContestsPostLockQuery",
   },
