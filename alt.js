@@ -1,10 +1,12 @@
 const axios = require("axios");
+const http = require("http");
 const ss = require("simple-statistics");
 const yargs = require("yargs/yargs");
 const { hideBin } = require("yargs/helpers");
 const blocked = require("blocked");
 const loadConfig = require("./load-config");
 const payload = require("./payload");
+
 let stats = [];
 let errStats = [];
 let durationCount = 0;
@@ -25,7 +27,9 @@ const createRequest = async (url, method, postBody) =>
     headers: {
       "content-type": "application/json",
       "Cookie": "ajs_anonymous_id=%2286af43bb-5e00-4cd2-8255-2ccf92bafedd%22; WZRK_G=775da19b01524940b53caff859541c59; _ga=amp-H8eiH9g1yFARZU_jE3mq0w; G_ENABLED_IDPS=google; __csrf=hsvtm; connect.sid=s%3AI5vgVKhdyELwu5H6ZvzYcBuSH_qFw_cT.JUuce2CGUxXHp%2BcVZUWZK6GSx4hkbWJfyNdixGSCRS4; IPL_Offer=variant3; dh_user_id=50155f00-1ab6-11eb-8436-95acf3119b5b"
-    }
+    },
+    timeout: 60000,
+    httpAgent: new http.Agent({ keepAlive: true }),
   });
 
 const startLoad = (url, method, maxRate, duration, minMultiple) => {
