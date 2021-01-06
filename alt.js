@@ -107,7 +107,7 @@ const startLoad = (url, method, maxRate, duration, minMultiple) => {
               .then(recordResponse(Date.now()))
               .catch((err) => {
                 errStats.push(err);
-                //console.log(err);
+                console.log('catched error', err);
                 pendingRequest--;
               });
           }
