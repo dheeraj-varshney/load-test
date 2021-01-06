@@ -39,7 +39,7 @@ const startLoad = (url, method, maxRate, duration, minMultiple) => {
 
   let testStartTime = Date.now();
 
-  const recordResponse = (startTime, pendingRequest) => (data) => {
+  const recordResponse = (startTime) => (data) => {
     pendingRequest--;
     stats.push(Date.now() - startTime);
     let response = data;
@@ -66,6 +66,7 @@ const startLoad = (url, method, maxRate, duration, minMultiple) => {
     });
     console.log("Total Successful response", stats.length);
     console.log("Errored Response count", errStats.length);
+    console.log("Errored", errStats[0]);
     console.log("***********************************");
   };
 
@@ -102,7 +103,7 @@ const startLoad = (url, method, maxRate, duration, minMultiple) => {
             pendingRequest++;
             let postBody = payload[query];
             createRequest(url, method, postBody)
-              .then(recordResponse(Date.now(), pendingRequest))
+              .then(recordResponse(Date.now()))
               .catch((err) => {
                 errStats.push(err);
                 //console.log(err);
