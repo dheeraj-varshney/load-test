@@ -28,12 +28,14 @@ const createRequest = async (url, method, postBody) =>
     },
   });
 
-const startLoad = (url, method, maxRate, duration) => {
+const startLoad = (url, method, maxRate, duration, minMultiple) => {
   let pendingRequest = 0;
   let rate = 0;
   const allQueries = Object.keys(loadConfig);
   allQueries.forEach((query) => (rate += loadConfig[query]));
   let minRate = rate;
+  rate = rate * minMultiple
+  
 
   let testStartTime = Date.now();
 
@@ -120,8 +122,8 @@ const startLoad = (url, method, maxRate, duration) => {
   }, 1000);
 };
 
-if (argv.url && argv.method && argv.maxRate && argv.duration) {
-  startLoad(argv.url, argv.method, argv.maxRate, argv.duration);
+if (argv.url && argv.method && argv.maxRate && argv.duration && argv.minMultiple) {
+  startLoad(argv.url, argv.method, argv.maxRate, argv.duration, argv.minMultiple);
 } else {
   console.log({ argv });
   console.error("pass proper args");
