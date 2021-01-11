@@ -2,7 +2,7 @@ const loadConfig = {
     //ContestsPostLockQuery:1,
     // GetTeamPreview: 3,
     // MyContestsCarouselQuery: 3,
-    ContestHomeQuery: 1,
+    ContestHomeQuery: 20,
     // ContestHomeTabsQuery: 8,
     // TotalChatUnreadCountQuery: 8,
     // GetLiveStreamBanner: 7,
