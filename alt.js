@@ -26,7 +26,8 @@ const createRequest = async (url, method, postBody) =>
     data: postBody,
     headers: {
       "content-type": "application/json",
-      "Cookie": "ajs_anonymous_id=%2286af43bb-5e00-4cd2-8255-2ccf92bafedd%22; WZRK_G=775da19b01524940b53caff859541c59; _ga=amp-H8eiH9g1yFARZU_jE3mq0w; G_ENABLED_IDPS=google; __csrf=hsvtm; connect.sid=s%3AI5vgVKhdyELwu5H6ZvzYcBuSH_qFw_cT.JUuce2CGUxXHp%2BcVZUWZK6GSx4hkbWJfyNdixGSCRS4; IPL_Offer=variant3; dh_user_id=50155f00-1ab6-11eb-8436-95acf3119b5b"
+      Cookie:
+        "ajs_anonymous_id=%2286af43bb-5e00-4cd2-8255-2ccf92bafedd%22; WZRK_G=775da19b01524940b53caff859541c59; _ga=amp-H8eiH9g1yFARZU_jE3mq0w; G_ENABLED_IDPS=google; __csrf=hsvtm; connect.sid=s%3AI5vgVKhdyELwu5H6ZvzYcBuSH_qFw_cT.JUuce2CGUxXHp%2BcVZUWZK6GSx4hkbWJfyNdixGSCRS4; IPL_Offer=variant3; dh_user_id=50155f00-1ab6-11eb-8436-95acf3119b5b",
     },
     // httpAgent: new http.Agent({ keepAlive: true }),
   });
@@ -37,8 +38,7 @@ const startLoad = (url, method, maxRate, duration, minMultiple) => {
   const allQueries = Object.keys(loadConfig);
   allQueries.forEach((query) => (rate += loadConfig[query]));
   let minRate = rate;
-  rate = rate * minMultiple
-  
+  rate = rate * minMultiple;
 
   let testStartTime = Date.now();
 
@@ -49,7 +49,7 @@ const startLoad = (url, method, maxRate, duration, minMultiple) => {
     const validResponse = response && response.data && !response.data.errors;
     if (!validResponse) {
       console.log("Invalid Response", response.status);
-      console.log(response)
+      console.log(response);
       errStats.push(response);
     }
   };
@@ -75,7 +75,7 @@ const startLoad = (url, method, maxRate, duration, minMultiple) => {
   };
 
   const increaseLoad = (durationCount, duration, pendingRequest) => {
-    if (durationCount > duration && pendingRequest <= 0) {
+    if (durationCount > duration) {
       printOutput(rate);
       return true;
     }
@@ -89,8 +89,11 @@ const startLoad = (url, method, maxRate, duration, minMultiple) => {
       durationCount = 0;
       stats = [];
       errStats = [];
-      testStartTime = Date.now()
-      if (rate > maxRate) {
+      testStartTime = Date.now();
+      if (rate > maxRate && pendingRequest > 0) {
+        console.log("waiting for pending requests");
+      }
+      if (rate > maxRate && pendingRequest <= 0) {
         clearInterval(interval);
       }
     } else {
@@ -102,7 +105,7 @@ const startLoad = (url, method, maxRate, duration, minMultiple) => {
               loadConfig[query] * (rate / minRate)
             } number of times`
           );
-          
+
           for (let j = 0; j < loadConfig[query] * (rate / minRate); j++) {
             pendingRequest++;
             let postBody = payload[query];
@@ -113,21 +116,33 @@ const startLoad = (url, method, maxRate, duration, minMultiple) => {
                 pendingRequest--;
               });
           }
-          console.log('Request finished.')
+          console.log("Request finished.");
           console.log("***********************");
         }
       } else {
         console.log(`Rate ${rate} Waiting for response`);
         console.log(`Pending request ${pendingRequest}`);
-        console.log('Error count', errStats.length);
+        console.log("Error count", errStats.length);
         console.log("***********************");
       }
     }
   }, 1000);
 };
 
-if (argv.url && argv.method && argv.maxRate && argv.duration && argv.minMultiple) {
-  startLoad(argv.url, argv.method, argv.maxRate, argv.duration, argv.minMultiple);
+if (
+  argv.url &&
+  argv.method &&
+  argv.maxRate &&
+  argv.duration &&
+  argv.minMultiple
+) {
+  startLoad(
+    argv.url,
+    argv.method,
+    argv.maxRate,
+    argv.duration,
+    argv.minMultiple
+  );
 } else {
   console.log({ argv });
   console.error("pass proper args");
