@@ -57,10 +57,10 @@ const startLoad = (url, method, maxRate, duration, minMultiple) => {
   const printOutput = (rate) => {
     console.log("***********************************");
     console.log(`rate ${rate} is complete`);
-    console.log(
-      "Mean response/sec",
-      stats.length / ((Date.now() - testStartTime) / 1000)
-    );
+    // console.log(
+    //   "Mean response/sec",
+    //   stats.length / ((Date.now() - testStartTime) / 1000)
+    // );
     console.log("Response latency", {
       min: ss.min(stats),
       max: ss.max(stats),
