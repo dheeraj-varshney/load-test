@@ -114,7 +114,7 @@ const startLoad = (url, method, body, rate, duration, increasePeriod) => {
     if (durationCount <= duration) {
       const previousRate = testIndex == 0 ? 0 : Number(rates[testIndex - 1]);
       const currentRate = Math.min(
-        previousRate + increaseCount * diff[testIndex],
+        Math.ceil(previousRate + increaseCount * diff[testIndex]),
         Number(rates[testIndex])
       );
       console.log(`Initiating ${currentRate} requests`);
