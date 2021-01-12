@@ -4,7 +4,7 @@ const yargs = require("yargs/yargs");
 const { hideBin } = require("yargs/helpers");
 const fs = require("fs");
 const blocked = require("blocked");
-const concurrencyModel = require("./load");
+//const concurrencyModel = require("./load");
 const argv = yargs(hideBin(process.argv)).argv;
 
 blocked(
@@ -16,14 +16,27 @@ blocked(
 const isValidResponse = (response) =>
   response && response.data && !response.data.errors;
 
-const startLoad = (url, method, body, rate, duration, logInterval) => {
+const startLoad = (url, method, body, rate, duration, increasePeriod) => {
   let stats = [];
   let errStats = [];
   let durationCount = 0;
+  let increaseCount = 0;
   let activeConnection = 0;
   let response = {};
   let validResponses = 0;
   const rates = rate.split(",");
+  const diff = [];
+
+  let increasePeriodNum = Number(increasePeriod);
+  for (let i = 0; i < rates.length; i++) {
+    let prev = i === 0 ? 0 : Number(rates[i - 1]);
+    diff.push(
+      increasePeriodNum !== 0
+        ? (Number(rates[i]) - prev) / increasePeriodNum
+        : Number(rates[i]) - prev
+    );
+  }
+
   let testIndex = 0;
   const recordFunction = (startTime) => (data) => {
     activeConnection--;
@@ -51,21 +64,22 @@ const startLoad = (url, method, body, rate, duration, logInterval) => {
       });
 
   const dataLogger = setInterval(function () {
-    console.dir(
-      response && response.data
-        ? response.data
-        : response
-        ? response.headers
-        : "response undefined",
-      {
-        depth: null,
-      }
-    );
+    // console.dir(
+    //   response && response.data
+    //     ? response.data
+    //     : response
+    //     ? response.headers
+    //     : "response undefined",
+    //   {
+    //     depth: null,
+    //   }
+    // );
     console.log("Errored Response count", errStats.length);
     console.log("Errored Response", errStats[0]);
   }, 5000);
   const interval = setInterval(function () {
     durationCount++;
+    increaseCount++;
     console.log("Active Connections", activeConnection);
     if (durationCount > duration && activeConnection <= 0) {
       if (testIndex >= rates.length - 1) {
@@ -74,6 +88,7 @@ const startLoad = (url, method, body, rate, duration, logInterval) => {
       }
       testIndex++;
       durationCount = 0;
+      increaseCount = 0;
       console.log(`test no. ${testIndex} is complete`);
       console.log(
         "Mean response/sec",
@@ -97,7 +112,13 @@ const startLoad = (url, method, body, rate, duration, logInterval) => {
       testStartTime = Date.now();
     }
     if (durationCount <= duration) {
-      for (let i = 0; i < Number(rates[testIndex]); i++) {
+      const previousRate = testIndex == 0 ? 0 : Number(rates[testIndex - 1]);
+      const currentRate = Math.min(
+        previousRate + increaseCount * diff[testIndex],
+        Number(rates[testIndex])
+      );
+      console.log(`Initiating ${currentRate} requests`);
+      for (let i = 0; i < currentRate; i++) {
         activeConnection++;
         createRequest();
       }
@@ -108,32 +129,27 @@ const startLoad = (url, method, body, rate, duration, logInterval) => {
   }, 1000);
 };
 
-if (argv.concurrencyModel) {
+if (argv.rateModel) {
   if (
     argv.url &&
     argv.method &&
     argv.body &&
-    argv.concurrency &&
-    argv.duration
+    argv.rate &&
+    argv.duration &&
+    argv.increasePeriod
   ) {
-    concurrencyModel(
-      argv.url,
-      argv.method,
-      argv.body,
-      argv.concurrency,
-      argv.duration
-    );
-  } else {
-    console.error("pass proper args");
-  }
-}
-if (argv.rateModel) {
-  if (argv.url && argv.method && argv.body && argv.rate && argv.duration) {
-    if (argv.rate < 10 && argv.duration < argv.rampDuration) {
+    if (argv.rate < 10 && argv.duration && argv.increasePeriod) {
       console.error("pass proper args");
     } else {
       const logDuration = argv.logInterval ? argv.logInterval : 1000;
-      startLoad(argv.url, argv.method, argv.body, argv.rate, argv.duration);
+      startLoad(
+        argv.url,
+        argv.method,
+        argv.body,
+        argv.rate,
+        argv.duration,
+        argv.increasePeriod
+      );
     }
   } else {
     console.log({ argv });
