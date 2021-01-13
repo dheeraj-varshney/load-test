@@ -4,7 +4,6 @@ const yargs = require("yargs/yargs");
 const { hideBin } = require("yargs/helpers");
 const fs = require("fs");
 const blocked = require("blocked");
-const concurrencyModel = require("./load");
 const argv = yargs(hideBin(process.argv)).argv;
 
 blocked(
