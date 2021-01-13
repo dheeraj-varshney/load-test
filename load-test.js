@@ -107,25 +107,6 @@ const startLoad = (url, method, body, rate, duration, logInterval) => {
   }, 1000);
 };
 
-if (argv.concurrencyModel) {
-  if (
-    argv.url &&
-    argv.method &&
-    argv.body &&
-    argv.concurrency &&
-    argv.duration
-  ) {
-    concurrencyModel(
-      argv.url,
-      argv.method,
-      argv.body,
-      argv.concurrency,
-      argv.duration
-    );
-  } else {
-    console.error("pass proper args");
-  }
-}
 if (argv.rateModel) {
   if (argv.url && argv.method && argv.body && argv.rate && argv.duration) {
     if (argv.rate < 10 && argv.duration < argv.rampDuration) {
