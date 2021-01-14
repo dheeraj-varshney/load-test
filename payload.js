@@ -137,6 +137,7 @@ const payload = {
       site: "cricket",
       matchId: 23905,
     },
+    operationName: "TeamCountQuery",
   },
 };
 
