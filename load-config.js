@@ -4,7 +4,7 @@ const loadConfig = {
     MyContestsCarouselQuery: 3,
     ContestHomeQuery: 3,
     ContestHomeTabsQuery: 8,
-    TotalChatUnreadCountQuery: 8,
+    // TotalChatUnreadCountQuery: 8,
     GetLiveStreamBanner: 7,
     MyPromotionsQuery: 6,
     RoundMessageQuery: 2,
