@@ -140,7 +140,7 @@ const payload = {
   //   operationName: "TeamCountQuery",
   // },
   ContestHomeQuery: {
-    "variables":{"site":"cricket","roundId":26253,"tourId":1730},
+    "variables":{"site":"cricket","matchId":26253,"tourId":1730},
     "query":"query ContestHomeQuery($site: String!, $tourId: Int!, $matchId: Int!) {\n  contestSections(\n    site: $site\n    matchId: $matchId\n    tourId: $tourId\n  ) {\n    __typename\n    totalContestCount\n    tag {\n      __typename\n      text\n    }\n    displayContests {\n      __typename\n      ...ContestItem\n    }\n    description\n    name\n    id\n  }\n}\nfragment ContestItem on Contest {\n  __typename\n  contestName\n  contestCategory\n  contestType\n  contestSize\n  currentSize\n  entryFee {\n    __typename\n    amount\n    symbol\n  }\n  \n  inviteCode\n  isInfiniteEntry\n  isPartnerContest\n  isGuaranteed\n  isMultipleEntry\n  prizeDisplayText\n  numberOfWinners\n  \n  isMultipleEntry\n  prizeAmount {\n    __typename\n    amount\n    symbol\n  }\n  \n  effectiveEntryFee {\n    __typename\n    amount\n  }\n  match {\n    __typename\n    id\n    status\n  }\n  tour {\n    __typename\n    id\n    name\n  }\n  site\n  hasJoined\n}\n",
     "operationName":"ContestHomeQuery"
   }
