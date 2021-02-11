@@ -11,7 +11,7 @@ const loadConfig = {
     // CricketMiniScoreCardQuery: 2,
     // ProfilePicQuery: 2,
     // TeamCountQuery: 3,
-    ContestHomeQuery: 10
+    ContestHomeQuery: 5
 }
 
 module.exports = loadConfig;
