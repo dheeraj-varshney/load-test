@@ -1,0 +1,5 @@
+Command being executed: sudo su && cd /var/www/load-test && git checkout rust_hello && git branch -D master && git checkout master && node alt.js --url=http://10.10.67.32:9999/graphql --method=post --maxRate=225 --duration=60 --minMultiple=1
+Target Server(s):
+10.10.21.184
+
+Executing command [ssh -i ../load-ssh-key.pem centos@10.10.21.184 sudo su && cd /var/www/load-test && git checkout rust_hello && git branch -D master && git checkout master && node alt.js --url=http://10.10.67.32:9999/graphql --method=post --maxRate=225 --duration=60 --minMultiple=1]...

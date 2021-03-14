@@ -1,16 +1,16 @@
 const loadConfig = {
-    ContestsPostLockQuery:1,
+    ContestsPostLockQuery:4,
     GetTeamPreview: 3,
-    MyContestsCarouselQuery: 3,
-    ContestHomeQuery: 3,
-    ContestHomeTabsQuery: 8,
-    TotalChatUnreadCountQuery: 8,
-    GetLiveStreamBanner: 7,
-    MyPromotionsQuery: 6,
-    RoundMessageQuery: 2,
-    CricketMiniScoreCardQuery: 2,
+    MyContestsCarouselQuery: 2,
+    ContestHomeQuery: 2,
+    ContestHomeTabsQuery: 7,
+    TotalChatUnreadCountQuery: 13,
+    GetLiveStreamBanner: 4,
+    MyPromotionsQuery: 4,
+    RoundMessageQuery: 4,
+    CricketMiniScoreCardQuery: 0,
     ProfilePicQuery: 2,
-    TeamCountQuery: 3
+    TeamCountQuery: 2
 }
 
 module.exports = loadConfig;
