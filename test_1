@@ -1,0 +1,3805 @@
+Command being executed: cd /var/www/load-test && sudo git pull && sudo git checkout graphql_new && node alt.js --url=http://10.10.67.32:9999/graphql --method=post --maxRate=90 --duration=10 --minMultiple=1
+Target Server(s):
+10.10.21.184
+10.10.20.27
+10.10.21.28
+10.10.20.60
+10.10.22.51
+10.10.22.61
+10.10.21.49
+10.10.20.19
+10.10.22.149
+10.10.20.87
+
+Executing command [ssh -i ../load-ssh-key.pem centos@10.10.21.184 cd /var/www/load-test && sudo git pull && sudo git checkout graphql_new && node alt.js --url=http://10.10.67.32:9999/graphql --method=post --maxRate=90 --duration=10 --minMultiple=1]...
+
+Executing command [ssh -i ../load-ssh-key.pem centos@10.10.20.27 cd /var/www/load-test && sudo git pull && sudo git checkout graphql_new && node alt.js --url=http://10.10.67.32:9999/graphql --method=post --maxRate=90 --duration=10 --minMultiple=1]...
+
+Executing command [ssh -i ../load-ssh-key.pem centos@10.10.21.28 cd /var/www/load-test && sudo git pull && sudo git checkout graphql_new && node alt.js --url=http://10.10.67.32:9999/graphql --method=post --maxRate=90 --duration=10 --minMultiple=1]...
+
+Executing command [ssh -i ../load-ssh-key.pem centos@10.10.20.60 cd /var/www/load-test && sudo git pull && sudo git checkout graphql_new && node alt.js --url=http://10.10.67.32:9999/graphql --method=post --maxRate=90 --duration=10 --minMultiple=1]...
+
+Executing command [ssh -i ../load-ssh-key.pem centos@10.10.22.51 cd /var/www/load-test && sudo git pull && sudo git checkout graphql_new && node alt.js --url=http://10.10.67.32:9999/graphql --method=post --maxRate=90 --duration=10 --minMultiple=1]...
+
+Executing command [ssh -i ../load-ssh-key.pem centos@10.10.22.61 cd /var/www/load-test && sudo git pull && sudo git checkout graphql_new && node alt.js --url=http://10.10.67.32:9999/graphql --method=post --maxRate=90 --duration=10 --minMultiple=1]...
+
+Executing command [ssh -i ../load-ssh-key.pem centos@10.10.21.49 cd /var/www/load-test && sudo git pull && sudo git checkout graphql_new && node alt.js --url=http://10.10.67.32:9999/graphql --method=post --maxRate=90 --duration=10 --minMultiple=1]...
+
+Executing command [ssh -i ../load-ssh-key.pem centos@10.10.20.19 cd /var/www/load-test && sudo git pull && sudo git checkout graphql_new && node alt.js --url=http://10.10.67.32:9999/graphql --method=post --maxRate=90 --duration=10 --minMultiple=1]...
+
+Executing command [ssh -i ../load-ssh-key.pem centos@10.10.22.149 cd /var/www/load-test && sudo git pull && sudo git checkout graphql_new && node alt.js --url=http://10.10.67.32:9999/graphql --method=post --maxRate=90 --duration=10 --minMultiple=1]...
+
+Executing command [ssh -i ../load-ssh-key.pem centos@10.10.20.87 cd /var/www/load-test && sudo git pull && sudo git checkout graphql_new && node alt.js --url=http://10.10.67.32:9999/graphql --method=post --maxRate=90 --duration=10 --minMultiple=1]...
+10.10.22.51:  Already up-to-date.
+10.10.22.51:  Already on 'graphql_new'
+10.10.20.87:  Already up-to-date.
+10.10.21.28:  Already up-to-date.
+10.10.20.87:  Already on 'graphql_new'
+10.10.20.60:  Already up-to-date.
+10.10.22.61:  Already up-to-date.
+10.10.22.149:  Already up-to-date.
+10.10.21.184:  Already up-to-date.
+10.10.20.27:  Already up-to-date.
+10.10.21.28:  Already on 'graphql_new'
+10.10.20.60:  Already on 'graphql_new'
+10.10.22.61:  Already on 'graphql_new'
+10.10.20.19:  Already up-to-date.
+10.10.22.149:  Already on 'graphql_new'
+10.10.20.27:  Already on 'graphql_new'
+10.10.21.184:  Already on 'graphql_new'
+10.10.20.19:  Already on 'graphql_new'
+10.10.21.49:  Already up-to-date.
+10.10.21.49:  Already on 'graphql_new'
+10.10.22.51:  Event loop delay 2
+Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+10.10.22.51:  ***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+10.10.22.51:  Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.20.87:  Event loop delay 2
+Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+10.10.20.87:  Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+10.10.20.87:  ***********************
+10.10.21.28:  Event loop delay 2
+Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+10.10.21.28:  ***********************
+10.10.20.60:  Event loop delay 2
+Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+10.10.20.60:  Hitting GetTeamPreview 3 number of times
+10.10.22.61:  Event loop delay 2
+Hitting ContestsPostLockQuery 4 number of times
+10.10.22.149:  Event loop delay 2
+Hitting ContestsPostLockQuery 4 number of times
+10.10.20.60:  Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+10.10.22.61:  Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+10.10.22.61:  ***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.20.27:  Event loop delay 2
+10.10.22.149:  Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.20.27:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+10.10.20.27:  Request finished.
+***********************
+10.10.21.184:  Event loop delay 2
+10.10.21.184:  Hitting ContestsPostLockQuery 4 number of times
+10.10.21.184:  Request finished.
+10.10.21.184:  ***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+10.10.21.184:  ***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+10.10.21.184:  ***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.20.19:  Event loop delay 2
+10.10.20.19:  Hitting ContestsPostLockQuery 4 number of times
+10.10.20.19:  Request finished.
+***********************
+10.10.20.19:  Hitting GetTeamPreview 3 number of times
+10.10.20.19:  Request finished.
+***********************
+10.10.20.19:  Hitting MyContestsCarouselQuery 2 number of times
+10.10.20.19:  Request finished.
+10.10.20.19:  ***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.21.49:  Event loop delay 2
+Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+10.10.21.49:  ***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+10.10.22.51:  Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.87:  Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.21.28:  Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.60:  Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.22.61:  Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.27:  Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.22.149:  Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.21.184:  Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.19:  Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.21.49:  Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.22.51:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+10.10.22.51:  ***********************
+Hitting GetTeamPreview 3 number of times
+10.10.22.51:  Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+10.10.22.51:  Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.22.51:  Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+10.10.20.87:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+10.10.20.87:  Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.20.87:  Request finished.
+***********************
+10.10.21.28:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+10.10.21.28:  Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.21.28:  Request finished.
+10.10.20.60:  Hitting ContestsPostLockQuery 4 number of times
+10.10.20.60:  Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+10.10.20.60:  Request finished.
+10.10.20.60:  ***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.20.60:  Request finished.
+***********************
+10.10.20.60:  Hitting ContestHomeTabsQuery 7 number of times
+10.10.20.60:  Request finished.
+10.10.20.60:  ***********************
+10.10.22.149:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+10.10.22.61:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+10.10.22.61:  ***********************
+Hitting GetTeamPreview 3 number of times
+10.10.22.61:  Request finished.
+***********************
+10.10.22.149:  Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.22.61:  Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.22.149:  Request finished.
+***********************
+10.10.22.61:  Request finished.
+***********************
+10.10.20.27:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.20.27:  Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.20.27:  Request finished.
+10.10.21.184:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+10.10.21.184:  Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+10.10.21.184:  ***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.21.184:  Request finished.
+10.10.20.19:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.20.19:  Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+10.10.21.49:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+10.10.21.49:  ***********************
+Hitting MyContestsCarouselQuery 2 number of times
+10.10.21.49:  Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.21.49:  Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+10.10.22.51:  ***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.87:  Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.21.28:  ***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.60:  Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.22.61:  Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.27:  ***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.22.149:  Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.21.184:  ***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.19:  Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.21.49:  ***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.22.51:  Event loop delay 1
+Hitting ContestsPostLockQuery 4 number of times
+10.10.22.51:  Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+10.10.22.51:  Request finished.
+***********************
+10.10.22.51:  Hitting MyContestsCarouselQuery 2 number of times
+10.10.22.51:  Request finished.
+10.10.22.51:  ***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+10.10.22.51:  Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+10.10.20.87:  Event loop delay 2
+Hitting ContestsPostLockQuery 4 number of times
+10.10.20.87:  Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+10.10.20.87:  Request finished.
+***********************
+10.10.20.87:  Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+10.10.20.87:  ***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+10.10.20.87:  Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+10.10.20.87:  Request finished.
+***********************
+10.10.20.87:  Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+10.10.20.87:  Hitting MyPromotionsQuery 4 number of times
+Request finished.
+10.10.20.87:  ***********************
+Hitting RoundMessageQuery 4 number of times
+10.10.20.87:  Request finished.
+***********************
+10.10.21.28:  Event loop delay 2
+10.10.21.28:  Hitting ContestsPostLockQuery 4 number of times
+10.10.21.28:  Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+10.10.21.28:  Request finished.
+***********************
+10.10.21.28:  Hitting MyContestsCarouselQuery 2 number of times
+10.10.21.28:  Request finished.
+***********************
+10.10.21.28:  Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+10.10.21.28:  Request finished.
+***********************
+10.10.21.28:  Hitting GetLiveStreamBanner 4 number of times
+10.10.21.28:  Request finished.
+10.10.21.28:  ***********************
+Hitting MyPromotionsQuery 4 number of times
+10.10.21.28:  Request finished.
+10.10.21.28:  ***********************
+10.10.21.28:  Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+10.10.20.60:  Event loop delay 1
+Hitting ContestsPostLockQuery 4 number of times
+10.10.20.60:  Request finished.
+10.10.20.60:  ***********************
+10.10.20.60:  Hitting GetTeamPreview 3 number of times
+Request finished.
+10.10.20.60:  ***********************
+Hitting MyContestsCarouselQuery 2 number of times
+10.10.20.60:  Request finished.
+10.10.20.60:  ***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+10.10.20.60:  ***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+10.10.20.60:  Request finished.
+***********************
+10.10.22.149:  Event loop delay 2
+10.10.20.60:  Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+10.10.22.61:  Hitting ContestsPostLockQuery 4 number of times
+10.10.22.61:  Request finished.
+10.10.22.61:  ***********************
+Hitting GetTeamPreview 3 number of times
+10.10.22.61:  Request finished.
+10.10.20.60:  Request finished.
+10.10.22.61:  ***********************
+10.10.22.61:  Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.20.60:  ***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+10.10.22.61:  Request finished.
+***********************
+10.10.22.61:  Hitting ContestHomeTabsQuery 7 number of times
+10.10.22.61:  Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+10.10.22.61:  Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+10.10.22.149:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+10.10.22.149:  ***********************
+Hitting GetTeamPreview 3 number of times
+10.10.22.149:  Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+10.10.22.61:  Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+10.10.22.149:  Request finished.
+10.10.22.149:  ***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+10.10.22.149:  Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+10.10.20.27:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+10.10.22.149:  Request finished.
+10.10.20.27:  Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+10.10.22.149:  ***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+10.10.20.27:  Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+10.10.22.149:  ***********************
+10.10.20.27:  Hitting ContestHomeQuery 2 number of times
+10.10.20.27:  Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.22.149:  Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+10.10.22.149:  Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+10.10.22.149:  ***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.27:  Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+10.10.20.27:  ***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+10.10.21.184:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+10.10.21.184:  ***********************
+Hitting GetTeamPreview 3 number of times
+10.10.21.184:  Request finished.
+10.10.21.184:  ***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+10.10.21.184:  ***********************
+10.10.21.184:  Hitting ContestHomeQuery 2 number of times
+Request finished.
+10.10.21.184:  ***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+10.10.21.184:  ***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+10.10.21.184:  ***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+10.10.20.19:  Event loop delay 2
+10.10.20.19:  Hitting ContestsPostLockQuery 4 number of times
+10.10.20.19:  Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+10.10.20.19:  ***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+10.10.20.19:  ***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+10.10.20.19:  ***********************
+10.10.20.19:  Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+10.10.20.19:  Hitting MyPromotionsQuery 4 number of times
+Request finished.
+10.10.20.19:  ***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+10.10.20.19:  ***********************
+Hitting ProfilePicQuery 2 number of times
+10.10.21.49:  Event loop delay 1
+Hitting ContestsPostLockQuery 4 number of times
+10.10.21.49:  Request finished.
+10.10.21.49:  ***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+10.10.21.49:  ***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+10.10.21.49:  Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+10.10.22.51:  ***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.87:  Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.21.28:  Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.60:  ***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.22.61:  Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.27:  Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.21.184:  Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.19:  Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.21.49:  ***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.22.51:  Event loop delay 1
+Hitting ContestsPostLockQuery 4 number of times
+10.10.22.51:  Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+10.10.22.51:  Request finished.
+***********************
+10.10.22.51:  Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+10.10.22.51:  ***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.22.51:  Request finished.
+***********************
+10.10.22.51:  Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+10.10.20.87:  Event loop delay 1
+Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+10.10.20.87:  Request finished.
+10.10.20.87:  ***********************
+Hitting MyContestsCarouselQuery 2 number of times
+10.10.20.87:  Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.20.87:  Request finished.
+10.10.21.28:  Event loop delay 1
+Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+10.10.21.28:  ***********************
+Hitting GetTeamPreview 3 number of times
+10.10.21.28:  Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+10.10.21.28:  Request finished.
+10.10.21.28:  ***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+10.10.21.28:  ***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+10.10.20.60:  Hitting ContestsPostLockQuery 4 number of times
+10.10.20.60:  Request finished.
+10.10.20.60:  ***********************
+Hitting GetTeamPreview 3 number of times
+10.10.20.60:  Request finished.
+10.10.20.60:  ***********************
+10.10.20.60:  Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+10.10.20.60:  ***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.20.60:  Request finished.
+10.10.20.60:  ***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+10.10.22.61:  Hitting ContestsPostLockQuery 4 number of times
+10.10.22.61:  Request finished.
+10.10.22.61:  ***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+10.10.22.61:  Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.22.149:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+10.10.20.27:  Event loop delay 2
+Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+10.10.22.149:  Request finished.
+10.10.20.27:  Hitting MyContestsCarouselQuery 2 number of times
+10.10.22.149:  ***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+10.10.22.149:  ***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.20.27:  Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+10.10.22.149:  Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+10.10.22.61:  Request finished.
+***********************
+10.10.21.184:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+10.10.20.19:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+10.10.20.19:  Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+10.10.20.19:  ***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.20.19:  Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+10.10.21.49:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+10.10.21.49:  ***********************
+Hitting GetTeamPreview 3 number of times
+10.10.21.49:  Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+10.10.21.49:  Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+10.10.21.49:  ***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+10.10.22.51:  ***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.87:  ***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.21.28:  Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.60:  Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.22.61:  Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.22.149:  ***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.27:  ***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.21.184:  Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.19:  ***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.21.49:  Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.22.51:  Event loop delay 2
+Hitting ContestsPostLockQuery 4 number of times
+10.10.22.51:  Request finished.
+10.10.22.51:  ***********************
+10.10.22.51:  Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+10.10.22.51:  Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+10.10.20.87:  Event loop delay 2
+10.10.20.87:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+10.10.20.87:  Hitting GetTeamPreview 3 number of times
+Request finished.
+10.10.20.87:  ***********************
+Hitting MyContestsCarouselQuery 2 number of times
+10.10.20.87:  Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+10.10.20.87:  ***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.21.28:  Event loop delay 1
+Hitting ContestsPostLockQuery 4 number of times
+10.10.21.28:  Request finished.
+***********************
+10.10.21.28:  Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.21.28:  Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.20.60:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+10.10.20.60:  ***********************
+Hitting GetTeamPreview 3 number of times
+10.10.22.61:  Event loop delay 1
+10.10.20.60:  Request finished.
+***********************
+10.10.20.60:  Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+10.10.20.60:  Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+10.10.22.149:  Event loop delay 1
+10.10.22.61:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+10.10.22.61:  Hitting GetTeamPreview 3 number of times
+Request finished.
+10.10.22.61:  ***********************
+10.10.22.61:  Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+10.10.22.149:  Hitting ContestsPostLockQuery 4 number of times
+10.10.22.61:  Hitting ContestHomeQuery 2 number of times
+10.10.22.61:  Request finished.
+10.10.22.149:  Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+10.10.22.61:  ***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.22.149:  Request finished.
+***********************
+10.10.22.149:  Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+10.10.22.149:  ***********************
+10.10.22.149:  Hitting ContestHomeQuery 2 number of times
+10.10.22.149:  Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.20.27:  Event loop delay 2
+Hitting ContestsPostLockQuery 4 number of times
+10.10.20.27:  Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+10.10.20.27:  ***********************
+10.10.20.27:  Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.20.27:  Request finished.
+10.10.20.27:  ***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.21.184:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+10.10.21.184:  ***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+10.10.21.184:  Request finished.
+***********************
+10.10.21.184:  Hitting ContestHomeQuery 2 number of times
+10.10.21.184:  Request finished.
+10.10.21.184:  ***********************
+10.10.21.184:  Hitting ContestHomeTabsQuery 7 number of times
+10.10.21.184:  Request finished.
+10.10.20.19:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+10.10.20.19:  ***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+10.10.20.19:  ***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+10.10.20.19:  ***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+10.10.21.49:  Event loop delay 2
+10.10.21.49:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+10.10.21.49:  ***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+10.10.21.49:  ***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.21.49:  Request finished.
+10.10.22.51:  ***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.87:  Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.21.28:  Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.60:  Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.22.61:  Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.22.149:  Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.27:  Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.19:  Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.21.184:  ***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.21.49:  ***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.22.51:  Event loop delay 2
+Hitting ContestsPostLockQuery 4 number of times
+10.10.22.51:  Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+10.10.22.51:  Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+10.10.22.51:  Hitting ContestHomeQuery 2 number of times
+Request finished.
+10.10.20.87:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+10.10.20.87:  ***********************
+10.10.20.87:  Hitting GetTeamPreview 3 number of times
+Request finished.
+10.10.20.87:  ***********************
+Hitting MyContestsCarouselQuery 2 number of times
+10.10.20.87:  Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+10.10.20.87:  ***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+10.10.21.28:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+10.10.21.28:  ***********************
+10.10.21.28:  Hitting GetTeamPreview 3 number of times
+10.10.21.28:  Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+10.10.20.60:  Event loop delay 2
+10.10.20.60:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+10.10.20.60:  ***********************
+Hitting GetTeamPreview 3 number of times
+10.10.20.60:  Request finished.
+10.10.20.60:  ***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.20.60:  Request finished.
+10.10.22.61:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+10.10.22.61:  Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+10.10.22.61:  Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+10.10.22.149:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+10.10.22.149:  Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+10.10.22.149:  Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+10.10.20.27:  Event loop delay 1
+10.10.20.27:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+10.10.20.27:  ***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.20.27:  Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.21.184:  Event loop delay 1
+Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+10.10.21.184:  ***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.21.184:  Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.20.19:  Event loop delay 1
+10.10.20.19:  Hitting ContestsPostLockQuery 4 number of times
+10.10.20.19:  Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+10.10.20.19:  Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+10.10.20.19:  Hitting TotalChatUnreadCountQuery 13 number of times
+10.10.21.49:  Event loop delay 1
+10.10.21.49:  Hitting ContestsPostLockQuery 4 number of times
+10.10.21.49:  Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+10.10.21.49:  ***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.21.49:  Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+10.10.22.51:  ***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.87:  ***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.21.28:  ***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.60:  ***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.22.61:  ***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.22.149:  ***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.27:  Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.21.184:  Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.19:  Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.21.49:  Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.22.51:  Event loop delay 2
+Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+10.10.22.51:  ***********************
+10.10.22.51:  Hitting GetTeamPreview 3 number of times
+Request finished.
+10.10.22.51:  ***********************
+10.10.22.51:  Hitting MyContestsCarouselQuery 2 number of times
+10.10.22.51:  Request finished.
+***********************
+10.10.22.51:  Hitting ContestHomeQuery 2 number of times
+10.10.22.51:  Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.22.51:  Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+10.10.22.51:  Request finished.
+10.10.22.51:  ***********************
+10.10.22.51:  Hitting MyPromotionsQuery 4 number of times
+10.10.22.51:  Request finished.
+***********************
+10.10.20.87:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+10.10.20.87:  Request finished.
+10.10.20.87:  ***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+10.10.20.87:  Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+10.10.20.87:  Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+10.10.20.87:  ***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.21.28:  Event loop delay 2
+Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+10.10.21.28:  Hitting MyContestsCarouselQuery 2 number of times
+10.10.21.28:  Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+10.10.21.28:  Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+10.10.20.60:  Hitting ContestsPostLockQuery 4 number of times
+10.10.20.60:  Request finished.
+10.10.20.60:  ***********************
+10.10.20.60:  Hitting GetTeamPreview 3 number of times
+10.10.20.60:  Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.22.61:  Event loop delay 2
+10.10.20.60:  Request finished.
+***********************
+10.10.20.60:  Hitting TotalChatUnreadCountQuery 13 number of times
+10.10.22.61:  Hitting ContestsPostLockQuery 4 number of times
+10.10.22.149:  Hitting ContestsPostLockQuery 4 number of times
+10.10.22.61:  Request finished.
+***********************
+10.10.22.61:  Hitting GetTeamPreview 3 number of times
+10.10.22.61:  Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.22.149:  Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+10.10.22.61:  Request finished.
+***********************
+10.10.22.61:  Hitting ContestHomeTabsQuery 7 number of times
+10.10.22.149:  Hitting MyContestsCarouselQuery 2 number of times
+10.10.22.149:  Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.22.149:  Request finished.
+10.10.22.149:  ***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.22.149:  Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+10.10.20.27:  Hitting ContestsPostLockQuery 4 number of times
+10.10.20.27:  Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+10.10.20.27:  Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.20.27:  Request finished.
+10.10.20.27:  ***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.20.27:  Request finished.
+***********************
+10.10.20.27:  Hitting TotalChatUnreadCountQuery 13 number of times
+10.10.21.184:  Event loop delay 1
+10.10.21.184:  Hitting ContestsPostLockQuery 4 number of times
+10.10.21.184:  Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+10.10.21.184:  Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+10.10.21.184:  Hitting ContestHomeQuery 2 number of times
+10.10.21.184:  Request finished.
+10.10.21.184:  ***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.20.19:  Event loop delay 1
+Hitting ContestsPostLockQuery 4 number of times
+10.10.20.19:  Request finished.
+***********************
+10.10.20.19:  Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+10.10.20.19:  Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+10.10.20.19:  Hitting MyPromotionsQuery 4 number of times
+10.10.21.49:  Event loop delay 1
+10.10.21.49:  Hitting ContestsPostLockQuery 4 number of times
+10.10.21.49:  Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+10.10.21.49:  ***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+10.10.21.49:  ***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+10.10.21.49:  Request finished.
+10.10.21.49:  ***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+10.10.22.51:  Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.21.28:  Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.60:  Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.22.61:  Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.22.149:  Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.27:  Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.21.184:  Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.19:  Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.21.49:  Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.22.51:  Event loop delay 2
+Hitting ContestsPostLockQuery 4 number of times
+10.10.22.51:  Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+10.10.22.51:  Hitting MyContestsCarouselQuery 2 number of times
+10.10.22.51:  Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.22.51:  Request finished.
+***********************
+10.10.20.87:  Event loop delay 1
+Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+10.10.20.87:  ***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.20.87:  Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+10.10.21.28:  Event loop delay 1
+Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+10.10.21.28:  Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+10.10.21.28:  Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.21.28:  Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.21.28:  Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+10.10.20.60:  Event loop delay 1
+Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+10.10.20.60:  Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+10.10.20.60:  Request finished.
+***********************
+10.10.20.60:  Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+10.10.22.149:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+10.10.22.149:  Hitting GetTeamPreview 3 number of times
+Request finished.
+10.10.22.61:  Hitting ContestsPostLockQuery 4 number of times
+10.10.22.149:  ***********************
+10.10.22.149:  Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+10.10.22.149:  ***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.22.61:  Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+10.10.22.149:  Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+10.10.22.61:  Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.22.149:  Hitting TotalChatUnreadCountQuery 13 number of times
+10.10.22.61:  Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+10.10.20.27:  Event loop delay 1
+Hitting ContestsPostLockQuery 4 number of times
+10.10.20.27:  Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+10.10.20.27:  Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+10.10.20.27:  Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.21.184:  Event loop delay 1
+Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+10.10.21.184:  ***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+10.10.21.184:  ***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+10.10.21.184:  ***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+10.10.20.19:  Event loop delay 1
+Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+10.10.20.19:  Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+10.10.20.19:  ***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+10.10.21.49:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+10.10.21.49:  ***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+10.10.21.49:  Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+10.10.21.49:  Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+10.10.22.51:  Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.87:  Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.21.28:  Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.60:  ***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.22.149:  Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.22.61:  ***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.27:  Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.21.184:  ***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.19:  Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.21.49:  Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.22.51:  Event loop delay 1
+Hitting ContestsPostLockQuery 4 number of times
+10.10.22.51:  Request finished.
+10.10.22.51:  ***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+10.10.22.51:  Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.22.51:  Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.22.51:  Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+10.10.22.51:  ***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+10.10.22.51:  Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+10.10.22.51:  Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.87:  Event loop delay 1
+Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+10.10.20.87:  ***********************
+Hitting GetTeamPreview 3 number of times
+10.10.20.87:  Request finished.
+10.10.20.87:  ***********************
+Hitting MyContestsCarouselQuery 2 number of times
+10.10.20.87:  Request finished.
+10.10.20.87:  ***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.20.87:  Request finished.
+10.10.20.87:  ***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+10.10.20.87:  Hitting TotalChatUnreadCountQuery 13 number of times
+10.10.20.87:  Request finished.
+10.10.20.87:  ***********************
+Hitting GetLiveStreamBanner 4 number of times
+10.10.20.87:  Request finished.
+10.10.20.87:  ***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+10.10.20.87:  ***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+10.10.20.87:  ***********************
+10.10.21.28:  Event loop delay 1
+10.10.21.28:  Hitting ContestsPostLockQuery 4 number of times
+10.10.21.28:  Request finished.
+10.10.21.28:  ***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.21.28:  Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.21.28:  Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+10.10.21.28:  Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+10.10.21.28:  Hitting RoundMessageQuery 4 number of times
+10.10.21.28:  Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+10.10.21.28:  Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+10.10.21.28:  Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.60:  Event loop delay 1
+Hitting ContestsPostLockQuery 4 number of times
+10.10.20.60:  Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+10.10.20.60:  Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+10.10.22.61:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+10.10.20.60:  Hitting TotalChatUnreadCountQuery 13 number of times
+10.10.22.61:  Request finished.
+10.10.22.61:  ***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+10.10.20.60:  Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+10.10.22.61:  ***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.22.149:  Hitting ContestsPostLockQuery 4 number of times
+10.10.22.61:  Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+10.10.22.149:  Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+10.10.20.60:  Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+10.10.20.60:  Hitting CricketMiniScoreCardQuery 0 number of times
+10.10.20.60:  Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+10.10.22.149:  Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+10.10.20.60:  Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.22.149:  Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.22.61:  Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+10.10.22.149:  Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+10.10.22.61:  Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+10.10.22.61:  Hitting RoundMessageQuery 4 number of times
+Request finished.
+10.10.22.61:  ***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+10.10.22.149:  Request finished.
+10.10.22.149:  ***********************
+Hitting GetLiveStreamBanner 4 number of times
+10.10.22.61:  ***********************
+Hitting ProfilePicQuery 2 number of times
+10.10.22.149:  Request finished.
+10.10.22.149:  ***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+10.10.22.149:  ***********************
+10.10.22.149:  Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+10.10.22.149:  Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.21.184:  Hitting ContestsPostLockQuery 4 number of times
+10.10.20.27:  Event loop delay 2
+Hitting ContestsPostLockQuery 4 number of times
+10.10.21.184:  Request finished.
+10.10.21.184:  ***********************
+Hitting GetTeamPreview 3 number of times
+10.10.21.184:  Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+10.10.20.27:  Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+10.10.21.184:  Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+10.10.20.27:  Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+10.10.21.184:  Hitting ContestHomeTabsQuery 7 number of times
+10.10.21.184:  Request finished.
+***********************
+10.10.21.184:  Hitting TotalChatUnreadCountQuery 13 number of times
+10.10.20.27:  Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+10.10.20.27:  Hitting ContestHomeTabsQuery 7 number of times
+10.10.21.184:  Request finished.
+10.10.21.184:  ***********************
+Hitting GetLiveStreamBanner 4 number of times
+10.10.20.27:  Request finished.
+10.10.20.27:  ***********************
+10.10.20.27:  Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+10.10.21.184:  Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+10.10.20.27:  Hitting GetLiveStreamBanner 4 number of times
+10.10.21.184:  ***********************
+Hitting ProfilePicQuery 2 number of times
+10.10.21.184:  Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.27:  Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+10.10.20.27:  Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+10.10.20.27:  ***********************
+10.10.20.19:  Hitting ContestsPostLockQuery 4 number of times
+10.10.20.19:  Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+10.10.20.19:  ***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.20.19:  Request finished.
+***********************
+10.10.20.19:  Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+10.10.20.19:  Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+10.10.20.19:  Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.21.49:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+10.10.21.49:  ***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.21.49:  Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.21.49:  Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+10.10.21.49:  Hitting MyPromotionsQuery 4 number of times
+10.10.21.49:  Request finished.
+***********************
+10.10.21.49:  Hitting RoundMessageQuery 4 number of times
+10.10.21.49:  Request finished.
+10.10.21.49:  ***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+10.10.21.49:  Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+10.10.21.49:  Request finished.
+***********************
+10.10.21.49:  Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.87:  Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.22.61:  Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.27:  Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.22.51:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+10.10.22.51:  ***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+10.10.22.51:  Request finished.
+***********************
+10.10.22.51:  Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+10.10.22.51:  Hitting ContestHomeTabsQuery 7 number of times
+10.10.22.51:  Request finished.
+***********************
+10.10.22.51:  Hitting TotalChatUnreadCountQuery 13 number of times
+10.10.20.87:  Event loop delay 2
+Hitting ContestsPostLockQuery 4 number of times
+10.10.20.87:  Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+10.10.20.87:  Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+10.10.20.87:  Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.20.87:  Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+10.10.20.87:  Request finished.
+***********************
+10.10.21.28:  Event loop delay 1
+Hitting ContestsPostLockQuery 4 number of times
+10.10.21.28:  Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+10.10.21.28:  Hitting MyContestsCarouselQuery 2 number of times
+10.10.21.28:  Request finished.
+***********************
+10.10.21.28:  Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+10.10.21.28:  Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+10.10.22.61:  Hitting ContestsPostLockQuery 4 number of times
+10.10.22.61:  Request finished.
+10.10.22.61:  ***********************
+Hitting GetTeamPreview 3 number of times
+10.10.22.61:  Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+10.10.22.149:  Hitting ContestsPostLockQuery 4 number of times
+10.10.20.60:  Hitting ContestsPostLockQuery 4 number of times
+10.10.22.149:  Request finished.
+10.10.22.149:  ***********************
+Hitting GetTeamPreview 3 number of times
+10.10.22.61:  Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+10.10.20.60:  Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+10.10.22.149:  Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.22.61:  ***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+10.10.20.60:  Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+10.10.22.149:  Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+10.10.20.60:  Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+10.10.22.149:  ***********************
+Hitting GetLiveStreamBanner 4 number of times
+10.10.22.149:  Request finished.
+***********************
+10.10.20.60:  Request finished.
+10.10.20.27:  Hitting ContestsPostLockQuery 4 number of times
+10.10.20.27:  Request finished.
+***********************
+10.10.20.27:  Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+10.10.20.27:  ***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.21.184:  Event loop delay 2
+Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+***********************
+Hitting GetTeamPreview 3 number of times
+10.10.20.27:  Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.21.184:  Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+10.10.20.27:  Request finished.
+10.10.21.184:  Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+10.10.21.184:  Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.19:  Event loop delay 1
+Hitting ContestsPostLockQuery 4 number of times
+10.10.20.19:  Request finished.
+***********************
+10.10.20.19:  Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+Hitting MyContestsCarouselQuery 2 number of times
+10.10.20.19:  Request finished.
+***********************
+10.10.20.19:  Hitting ContestHomeQuery 2 number of times
+Request finished.
+***********************
+Hitting ContestHomeTabsQuery 7 number of times
+10.10.20.19:  Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+10.10.20.19:  Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+10.10.20.19:  Hitting MyPromotionsQuery 4 number of times
+10.10.21.49:  Hitting ContestsPostLockQuery 4 number of times
+Request finished.
+10.10.21.49:  ***********************
+10.10.21.49:  Hitting GetTeamPreview 3 number of times
+Request finished.
+***********************
+10.10.21.49:  Hitting MyContestsCarouselQuery 2 number of times
+10.10.21.49:  Request finished.
+***********************
+Hitting ContestHomeQuery 2 number of times
+10.10.21.49:  Request finished.
+***********************
+10.10.21.49:  Hitting ContestHomeTabsQuery 7 number of times
+Request finished.
+***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+10.10.21.49:  Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+10.10.22.51:  Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.87:  Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.21.28:  Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.60:  ***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.22.149:  Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.22.61:  ***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.27:  ***********************
+Hitting TotalChatUnreadCountQuery 13 number of times
+Request finished.
+***********************
+Hitting GetLiveStreamBanner 4 number of times
+Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.20.19:  Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.21.49:  Request finished.
+***********************
+Hitting MyPromotionsQuery 4 number of times
+Request finished.
+***********************
+Hitting RoundMessageQuery 4 number of times
+Request finished.
+***********************
+Hitting CricketMiniScoreCardQuery 0 number of times
+Request finished.
+***********************
+Hitting ProfilePicQuery 2 number of times
+Request finished.
+***********************
+Hitting TeamCountQuery 2 number of times
+Request finished.
+***********************
+10.10.22.51:  Event loop delay 2
+***********************************
+10.10.22.51:  rate 47 is complete
+Mean response/sec 42.661341563038945
+10.10.22.51:  Response latency { min: 25, max: 473, median: 77, p95: 171, p99: 290 }
+Total Successful response 470
+10.10.22.51:  Errored Response count 0
+10.10.22.51:  Errored undefined
+***********************************
+10.10.22.51:  <process completed: 15 seconds>
+10.10.20.87:  Event loop delay 1
+***********************************
+rate 47 is complete
+10.10.20.87:  Mean response/sec 42.67683646599473
+Response latency { min: 28, max: 425, median: 101, p95: 198, p99: 260 }
+10.10.20.87:  Total Successful response 470
+10.10.20.87:  Errored Response count 0
+Errored undefined
+***********************************
+10.10.21.28:  ***********************************
+10.10.21.28:  rate 47 is complete
+10.10.21.28:  Mean response/sec 42.67683646599473
+Response latency { min: 98, max: 480, median: 153, p95: 252, p99: 441 }
+Total Successful response 470
+Errored Response count 0
+10.10.21.28:  Errored undefined
+***********************************
+10.10.20.87:  <process completed: 15 seconds>
+10.10.20.60:  Event loop delay 1
+10.10.22.61:  Event loop delay 2
+10.10.22.149:  Event loop delay 1
+10.10.22.61:  ***********************************
+rate 47 is complete
+10.10.21.28:  <process completed: 15 seconds>
+10.10.20.60:  ***********************************
+rate 47 is complete
+Mean response/sec 42.684588139133595
+10.10.22.61:  Mean response/sec 42.69234262875829
+Response latency { min: 154, max: 635, median: 253, p95: 525, p99: 602 }
+Total Successful response 470
+Errored Response count 0
+10.10.22.149:  ***********************************
+rate 47 is complete
+Mean response/sec 42.69234262875829
+Response latency { min: 157, max: 664, median: 311, p95: 596, p99: 644 }
+Total Successful response 470
+10.10.22.61:  Errored undefined
+***********************************
+10.10.22.149:  Errored Response count 0
+Errored undefined
+10.10.22.149:  ***********************************
+10.10.20.60:  Response latency { min: 138, max: 640, median: 291.5, p95: 509, p99: 584 }
+Total Successful response 470
+Errored Response count 0
+Errored undefined
+***********************************
+10.10.20.27:  ***********************************
+rate 47 is complete
+Mean response/sec 42.67296168512802
+10.10.21.184:  Event loop delay 1
+***********************************
+rate 47 is complete
+Mean response/sec 42.684588139133595
+10.10.20.60:  <process completed: 15 seconds>
+10.10.22.61:  <process completed: 15 seconds>
+10.10.22.149:  <process completed: 15 seconds>
+10.10.20.27:  Response latency { min: 186, max: 775, median: 352.5, p95: 674, p99: 698 }
+Total Successful response 470
+Errored Response count 0
+Errored undefined
+***********************************
+10.10.21.184:  Response latency { min: 267, max: 801, median: 419, p95: 742, p99: 759 }
+Total Successful response 470
+10.10.21.184:  Errored Response count 0
+Errored undefined
+***********************************
+10.10.20.19:  Event loop delay 1
+***********************************
+rate 47 is complete
+10.10.20.19:  Mean response/sec 42.684588139133595
+Response latency { min: 357, max: 839, median: 468.5, p95: 789, p99: 828 }
+10.10.20.19:  Total Successful response 470
+Errored Response count 0
+Errored undefined
+***********************************
+10.10.21.184:  <process completed: 15 seconds>
+10.10.20.27:  <process completed: 15 seconds>
+10.10.20.19:  <process completed: 15 seconds>
+10.10.21.49:  ***********************************
+rate 47 is complete
+Mean response/sec 42.680711950599346
+10.10.21.49:  Response latency { min: 415, max: 875, median: 495.5, p95: 840, p99: 856 }
+10.10.21.49:  Total Successful response 470
+10.10.21.49:  Errored Response count 0
+Errored undefined
+***********************************
+10.10.21.49:  <process completed: 15 seconds>

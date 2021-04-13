@@ -1,0 +1,3247 @@
+Event loop delay 1
+Hitting ContestHomeQuery 10 number of times
+Request finished.
+***********************
+Event loop delay 2
+Hitting ContestHomeQuery 10 number of times
+Request finished.
+***********************
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+Hitting ContestHomeQuery 10 number of times
+Request finished.
+***********************
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+Event loop delay 4
+Hitting ContestHomeQuery 10 number of times
+Request finished.
+***********************
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+Event loop delay 3
+Hitting ContestHomeQuery 10 number of times
+Request finished.
+***********************
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+Event loop delay 2
+Hitting ContestHomeQuery 10 number of times
+Request finished.
+***********************
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+Event loop delay 3
+Hitting ContestHomeQuery 10 number of times
+Request finished.
+***********************
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+Event loop delay 4
+Hitting ContestHomeQuery 10 number of times
+Request finished.
+***********************
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+Hitting ContestHomeQuery 10 number of times
+Request finished.
+***********************
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+Event loop delay 2
+Hitting ContestHomeQuery 10 number of times
+Request finished.
+***********************
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+{
+  __typename: 'ContestSection',
+  totalContestCount: 1,
+  tag: null,
+  displayContests: [
+    {
+      __typename: 'Contest',
+      contestName: 'Rs.1,000,000',
+      contestCategory: 'paid',
+      contestType: 'grand',
+      contestSize: 40296,
+      currentSize: 28125,
+      entryFee: [Object],
+      inviteCode: '190hojj2r4e51-',
+      isInfiniteEntry: false,
+      isPartnerContest: false,
+      isGuaranteed: true,
+      isMultipleEntry: true,
+      prizeDisplayText: '10 Lakhs',
+      numberOfWinners: 22162,
+      prizeAmount: [Object],
+      effectiveEntryFee: null,
+      match: [Object],
+      tour: [Object],
+      site: 'cricket',
+      hasJoined: false
+    }
+  ],
+  description: 'Get ready for mega winnings!',
+  name: 'Mega Contest',
+  id: 5
+}
+Event loop delay 4
+***********************************
+rate 10 is complete
+Mean response/sec 9.068649678062936
+Response latency { min: 594, max: 2666, median: 918, p95: 2024.5, p99: 2401.5 }
+Total Successful response 100
+Errored Response count 0
+Errored undefined
+***********************************
