@@ -51,8 +51,6 @@ const startLoad = (url, method, maxRate, duration, minMultiple) => {
     if (!validResponse) {
       console.log("Invalid Response", response.status);
       errStats.push(response);
-    } else  {
-      console.log(response.data.data.contestSections[0])
     }
   };
 
