@@ -26,8 +26,7 @@ const createRequest = async (url, method, postBody) =>
     data: postBody,
     headers: {
       "content-type": "application/json",
-      "Cookie": "ajs_anonymous_id=%2286af43bb-5e00-4cd2-8255-2ccf92bafedd%22; WZRK_G=775da19b01524940b53caff859541c59; _ga=amp-H8eiH9g1yFARZU_jE3mq0w; G_ENABLED_IDPS=google; __csrf=hsvtm; connect.sid=s%3AI5vgVKhdyELwu5H6ZvzYcBuSH_qFw_cT.JUuce2CGUxXHp%2BcVZUWZK6GSx4hkbWJfyNdixGSCRS4; IPL_Offer=variant3; dh_user_id=50155f00-1ab6-11eb-8436-95acf3119b5b",
-      "If-None-Match": 'dream_team{"site":"cricket","roundId":23905,"siteId":1,"wlsId":1}-->W/"3b63-6RK16vshFX02XzcIRooT+G4M0OM"match{"roundId":23905,"site":"cricket","siteId":1,"wlsId":1}-->W/"f85-XDj8dWz0RxCvnncNZbfI6yHZNBU"my_teams_v2{"tourId":1616,"roundId":23905,"site":"cricket","siteId":1,"wlsId":1}-->W/"97e-Qq7fQWKvInipFJHx+Uaqa2j2SQo"player{"roundId":23905}-->W/"3b63-6RK16vshFX02XzcIRooT+G4M0OM"round_info{"roundId":23905,"site":"cricket","siteId":1,"wlsId":1}-->W/"1c03-g1aAKRGS0rodoVOfCep5rvGHftg"sites{"site":"cricket","slug":"cricket","slugs":["cricket"],"country":114,"siteId":1,"wlsId":1}-->W/"1144-99mPqT9KXPjHN3rMZ13chjX/kKo"squads{"roundId":23905,"site":"cricket","tourId":1616,"teamId":-1,"siteId":1,"wlsId":1}-->W/"791-pI+h4speqob1goxIfq2qMzfXBxw"'
+      "Cookie": "ajs_anonymous_id=%2286af43bb-5e00-4cd2-8255-2ccf92bafedd%22; WZRK_G=775da19b01524940b53caff859541c59; _ga=amp-H8eiH9g1yFARZU_jE3mq0w; G_ENABLED_IDPS=google; __csrf=hsvtm; connect.sid=s%3AI5vgVKhdyELwu5H6ZvzYcBuSH_qFw_cT.JUuce2CGUxXHp%2BcVZUWZK6GSx4hkbWJfyNdixGSCRS4; IPL_Offer=variant3; dh_user_id=50155f00-1ab6-11eb-8436-95acf3119b5b"
     },
     // httpAgent: new http.Agent({ keepAlive: true }),
   });
