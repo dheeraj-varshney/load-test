@@ -1,5 +1,5 @@
 const loadConfig = {
-    GetTeamPreview: 2
+    GetTeamPreview: 20
 }
 
 module.exports = loadConfig;
