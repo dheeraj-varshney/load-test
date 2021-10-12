@@ -105,7 +105,7 @@ const startLoad = (url, method, maxRate, duration, minMultiple) => {
           
           for (let j = 0; j < loadConfig[query] * (rate / minRate); j++) {
             pendingRequest++;
-            let postBody = payload[query];
+            let postBody = {};
             createRequest(url, method, postBody)
               .then(recordResponse(Date.now()))
               .catch((err) => {
