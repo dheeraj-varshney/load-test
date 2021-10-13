@@ -1,5 +1,5 @@
 const loadConfig = {
-    Health:25,
+    Health:12,
 }
 
 module.exports = loadConfig;
