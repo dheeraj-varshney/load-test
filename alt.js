@@ -46,6 +46,7 @@ const startLoad = (url, method, maxRate, duration, minMultiple, postBody = {}) =
     pendingRequest--;
     stats.push(Date.now() - startTime);
     let response = data;
+    console.log(response)
     const validResponse = response && response.data && !response.data.errors;
     if (!validResponse) {
       console.log("Invalid Response", response.status);
@@ -56,7 +57,7 @@ const startLoad = (url, method, maxRate, duration, minMultiple, postBody = {}) =
 
   const printOutput = (rate) => {
     console.log("***********************************");
-    console.log(`rate ${rate} is complete`);
+    console.log(`${new Date()} rate ${rate} is complete`);
     console.log(
       "Mean response/sec",
       stats.length / ((Date.now() - testStartTime) / 1000)
