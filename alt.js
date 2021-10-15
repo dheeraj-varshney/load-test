@@ -31,7 +31,7 @@ const createRequest = async (url, method, postBody) =>
     // httpAgent: new http.Agent({ keepAlive: true }),
   });
 
-const startLoad = (url, method, maxRate, duration, minMultiple) => {
+const startLoad = (url, method, maxRate, duration, minMultiple, postBody = {}) => {
   let pendingRequest = 0;
   let rate = 0;
   const allQueries = Object.keys(loadConfig);
@@ -105,7 +105,6 @@ const startLoad = (url, method, maxRate, duration, minMultiple) => {
           
           for (let j = 0; j < loadConfig[query] * (rate / minRate); j++) {
             pendingRequest++;
-            let postBody = {};
             createRequest(url, method, postBody)
               .then(recordResponse(Date.now()))
               .catch((err) => {
@@ -127,7 +126,13 @@ const startLoad = (url, method, maxRate, duration, minMultiple) => {
 };
 
 if (argv.url && argv.method && argv.maxRate && argv.duration && argv.minMultiple) {
-  startLoad(argv.url, argv.method, argv.maxRate, argv.duration, argv.minMultiple);
+  let postBody = {};
+  if (argv.method.toUpperCase() == "POST" && argv.body) {
+    postBody = JSON.parse(argv.body);
+  } else {
+    console.log("body param missing. Querying with empty post body");
+  }
+  startLoad(argv.url, argv.method, argv.maxRate, argv.duration, argv.minMultiple, postBody);
 } else {
   console.log({ argv });
   console.error("pass proper args");
