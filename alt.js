@@ -46,7 +46,6 @@ const startLoad = (url, method, maxRate, duration, minMultiple, postBody = {}) =
     pendingRequest--;
     stats.push(Date.now() - startTime);
     let response = data;
-    console.log(response)
     const validResponse = response && response.data && !response.data.errors;
     if (!validResponse) {
       console.log("Invalid Response", response.status);
