@@ -61,7 +61,7 @@ const startLoad = (url, method, maxRate, duration, minMultiple, postBody = {}) =
       "Mean response/sec",
       stats.length / ((Date.now() - testStartTime) / 1000)
     );
-    console.log("Response latency", {
+    console.log(`rate ${rate} Response latency`, {
       min: ss.min(stats),
       max: ss.max(stats),
       median: ss.median(stats),
