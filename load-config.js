@@ -1,5 +1,5 @@
 const loadConfig = {
-    Health:10,
+    ContestHomeQuery:5,
 }
 
 module.exports = loadConfig;
